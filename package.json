@@ -14,7 +14,7 @@
     "astro": "^1.0.0-beta.24"
   },
   "dependencies": {
-    "atomico": "^1.54.1",
+    "atomico": "^1.54.2",
     "formilk": "^0.21.0"
   }
 }
