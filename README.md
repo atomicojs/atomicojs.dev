@@ -1,6 +1,6 @@
 # Astro + Atomico SSR
 
-Atomico SSR plugin, tasks:
+Atomico SSR [plugin](./plugin/), tasks:
 
 - [x] SSR from the server.
 - [ ] Hydration, Atomico doesn't need `astro-root`, hydration is Automatic, but I need the component's js to be imported on the client.
