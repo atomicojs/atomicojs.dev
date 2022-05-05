@@ -1,5 +1,6 @@
 import { c, html, css } from "atomico";
 import { MyButton } from "./atomico-jsx";
+
 function component() {
   return html`<host shadowDom>
     <h1 onclick=${console.log}>welcome!</h1>

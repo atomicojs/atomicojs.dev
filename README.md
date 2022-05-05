@@ -7,11 +7,34 @@ Atomico SSR [plugin](./plugin/), tasks:
 
 > Atomico automatically hydrates the sun when detecting data-hydrate.
 
-## Cases
+## Case 1
+
+hydration works but incorporating the component script using the script tag
+
+```html
+---
+import "./atomico.js"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>Astro</h1>
+    <script src="./atomico.js"></script>
+    <my-wc id="id"></my-wc>
+  </body>
+</html>
+```
+
+it is a valid behavior to publish @astro/atomico?...
+
+## Case 2
 
 in the `src/pages/` file are the example that I try to render on the client.
-
-### Case 1
 
 **client:load**: does not hydrate since the js is not imported on the client.
 
