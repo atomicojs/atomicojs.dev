@@ -55,3 +55,23 @@ Cannot read properties of null (reading 'replace')
     at Module.generateHydrateScript (/node_modules/astro/dist/runtime/server/hydration.js:63:35)
     at Module.renderComponent (/node_modules/astro/dist/runtime/server/index.js:226:27) (x3)
 ```
+
+## Logs
+
+### npm run build
+
+**Error**
+
+```bash
+ error   Endpoint handler not found! Expected an exported function for "get"
+    at renderEndpoint (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/runtime/server/index.js:330:11)
+    at call (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/endpoint/index.js:28:26)
+    at async generatePath (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/build/generate.js:150:20)
+    at async generatePage (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/build/generate.js:88:5)
+    at async generatePages (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/build/generate.js:61:5)
+    at async staticBuild (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/build/static-build.js:86:5)
+    at async AstroBuilder.build (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/build/index.js:100:5)
+    at async AstroBuilder.run (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/build/index.js:141:7)
+    at async build (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/build/index.js:30:3)
+    at async cli (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/cli/index.js:123:16)
+```
