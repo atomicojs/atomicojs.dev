@@ -1,43 +1,53 @@
 # Astro Starter Kit: Minimal
 
-```
-npm init astro -- --template minimal
-```
+Atomico SSR plugin, tasks:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+- [x] SSR desde el servidor.
+- [ ] hydration, Atomico doesn't need `astro-root`, hydration is Automatic, but I need the component's js to be imported on the client.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Cases
 
-## 🚀 Project Structure
+in the `src/pages/` file are the example that I try to render on the client.
 
-Inside of your Astro project, you'll see the following folders and files:
+### Case 1
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+**client:idle**: does not hydrate since the js is not imported on the client.
+
+```html
+<my-wc id="id" client:idle></my-wc>
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+**Error**
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+Cannot read properties of null (reading 'replace')
+    at removeTimestampQuery (C:\git\atomico\examples\astro\node_modules\vite\dist\node\chunks\dep-e1fc1d62.js:2360:16)
+    at ModuleGraph.resolveUrl (C:\git\atomico\examples\astro\node_modules\vite\dist\node\chunks\dep-e1fc1d62.js:57480:33)
+    at Object.resolve (file:///C:/git/atomico/examples/astro/node_modules/astro/dist/core/render/dev/index.js:108:72)
+    at Module.generateHydrateScript (/node_modules/astro/dist/runtime/server/hydration.js:63:35)
+    at Module.renderComponent (/node_modules/astro/dist/runtime/server/index.js:226:27) (x3)
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Case 2
 
-## 🧞 Commands
+**client:only**: does not hydrate since the js is not imported on the client.
 
-All commands are run from the root of the project, from a terminal:
+```html
+<my-wc id="id" client:only="atomico"></my-wc>
+```
 
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
+```bash
+Uncaught SyntaxError: Unexpected token ':' (at (index):12:12)
+```
 
-## 👀 Want to learn more?
+```html
+<script type="module" data-astro-component-hydration astro-script="//script-2">
+  import setup from '/node_modules/.vite/deps/astro_client_only_js.js?v=286be239';
+  import '/@id/astro:scripts/before-hydration.js';
+  setup("ZXH7dJ", {name:"my-wc",value: "atomico"}, async () => {
+    const [{ : Component }, { default: hydrate }] = await Promise.all([import("/@id/"), import("/@fs/C:/git/atomico/examples/astro/plugin/client.js")]);
+    return (el, children) => hydrate(el)(Component, {id:"id"}, children);
 
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+  });
+</script>
+```

@@ -1,13 +1,12 @@
 function getRenderer() {
   return {
-    name: "@atomico/astro",
-    // clientEntrypoint: "./plugin/client.js",
+    name: "atomico",
+    clientEntrypoint: "./plugin/client.js",
     serverEntrypoint: "./plugin/server.js",
     jsxImportSource: "atomico",
     jsxTransformOptions: async () => {
       const {
         default: { default: jsx },
-        // @ts-expect-error types not found
       } = await import("@babel/plugin-transform-react-jsx");
       return {
         plugins: [jsx({}, { runtime: "automatic", importSource: "atomico" })],
@@ -30,7 +29,7 @@ function getViteConfiguration() {
 
 export default function () {
   return {
-    name: "@atomico/astro",
+    name: "atomico",
     hooks: {
       "astro:config:setup": ({ addRenderer, updateConfig }) => {
         /**
