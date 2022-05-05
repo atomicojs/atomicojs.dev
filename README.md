@@ -4,6 +4,9 @@ Atomico SSR [plugin](./plugin/), tasks:
 
 - [x] SSR from the server.
 - [ ] Hydration, Atomico doesn't need `astro-root`, hydration is Automatic, but I need the component's js to be imported on the client.
+- [x] `npm run dev` and `npm run start`
+- [ ] `npm run build`
+- [ ] `npm run preview`
 
 > Atomico automatically hydrates the sun when detecting data-hydrate.
 

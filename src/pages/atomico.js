@@ -1,10 +1,15 @@
-import { c, html, css } from "atomico";
+import { c, html, css, useProp } from "atomico";
 import { MyButton } from "./atomico-jsx";
 
 function component() {
+  const [count, setProp] = useProp("count");
   return html`<host shadowDom>
-    <h1 onclick=${console.log}>welcome!</h1>
-    <${MyButton} />
+    <h1 onclick=${console.log}>welcome! ${count}</h1>
+    <${MyButton}
+      onclick=${() => {
+        setProp((count) => count + 1);
+      }}
+    />
   </host>`;
 }
 
@@ -17,5 +22,12 @@ component.styles = css`
     display: block;
   }
 `;
+
+component.props = {
+  count: {
+    type: Number,
+    value: 0,
+  },
+};
 
 customElements.define("my-wc", c(component));
