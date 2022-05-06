@@ -1,4 +1,4 @@
-import { c } from "atomico";
+import { c } from "atomico/core";
 
 function button() {
   return (

@@ -17,13 +17,13 @@ function getRenderer() {
 
 function getViteConfiguration() {
   return {
-    // optimizeDeps: {
-    //   include: ["atomico", "atomico/jsx-runtime"],
-    //   exclude: ["./plugin/server.js"],
-    // },
-    ssr: {
-      external: ["atomico/ssr.js"],
+    optimizeDeps: {
+      include: ["atomico", "atomico/jsx-runtime"],
+      exclude: ["./plugin/server.js"],
     },
+    // ssr: {
+    //   external: ["atomico/ssr.js"],
+    // },
   };
 }
 

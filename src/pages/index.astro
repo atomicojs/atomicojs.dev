@@ -1,5 +1,5 @@
 ---
-import "./atomico.js"
+import "../components/atomico.tsx"
 ---
 
 <html lang="en">
@@ -10,7 +10,9 @@ import "./atomico.js"
 	</head>
 	<body>
 		<h1>Astro</h1>
-		<script  src="./atomico.js"></script>
-		<my-wc id="id" count={10}></my-wc>	
+		<script>
+		import "../components/atomico.tsx";
+		</script>
+		<my-wc id="id" count={10} ></my-wc>	
 	</body>
 </html>

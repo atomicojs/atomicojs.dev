@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev --experimental-integrations",
+    "dev": "LANG=ES_CL  astro dev --experimental-integrations",
     "start": "astro dev --experimental-integrations",
     "build": "astro build --experimental-integrations",
     "preview": "astro preview --experimental-integrations"
@@ -14,7 +14,8 @@
     "astro": "^1.0.0-beta.24"
   },
   "dependencies": {
-    "atomico": "^1.54.2",
+    "@atomico/astro": "^0.2.0",
+    "atomico": "^1.55.2",
     "formilk": "^0.21.0"
   }
 }

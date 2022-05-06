@@ -1,16 +1,18 @@
-import { c, html, css, useProp } from "atomico";
+import { c, css, useProp } from "atomico/core";
 import { MyButton } from "./atomico-jsx";
 
 function component() {
   const [count, setProp] = useProp("count");
-  return html`<host shadowDom>
-    <h1 onclick=${console.log}>welcome! ${count}</h1>
-    <${MyButton}
-      onclick=${() => {
-        setProp((count) => count + 1);
-      }}
-    />
-  </host>`;
+  return (
+    <host shadowDom>
+      <h1 onclick={console.log}>welcome! {count}</h1>
+      <MyButton
+        onclick={() => {
+          setProp((count) => count + 1);
+        }}
+      />
+    </host>
+  );
 }
 
 component.styles = css`

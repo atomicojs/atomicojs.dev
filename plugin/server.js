@@ -1,5 +1,6 @@
 import "atomico/ssr";
 import { html } from "atomico";
+
 export default {
   check(Component) {
     return customElements.get(Component);

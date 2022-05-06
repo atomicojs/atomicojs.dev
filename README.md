@@ -5,37 +5,12 @@ Atomico SSR [plugin](./plugin/), tasks:
 - [x] SSR from the server.
 - [ ] Hydration, Atomico doesn't need `astro-root`, hydration is Automatic, but I need the component's js to be imported on the client.
 - [x] `npm run dev` and `npm run start`
-- [ ] `npm run build`
-- [ ] `npm run preview`
+- [x] `npm run build`
+- [x] `npm run preview`
 
 > Atomico automatically hydrates the sun when detecting data-hydrate.
 
-## Case 1
-
-hydration works but incorporating the component script using the script tag
-
-```html
----
-import "./atomico.js"
----
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-    <script src="./atomico.js"></script>
-    <my-wc id="id"></my-wc>
-  </body>
-</html>
-```
-
-it is a valid behavior to publish @astro/atomico?...
-
-## Case 2
+## client:load error
 
 in the `src/pages/` file are the example that I try to render on the client.
 
