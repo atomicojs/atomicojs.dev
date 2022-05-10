@@ -4,18 +4,25 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "LANG=ES_CL  astro dev --experimental-integrations",
+    "dev": "astro dev --experimental-integrations",
     "start": "astro dev --experimental-integrations",
     "build": "astro build --experimental-integrations",
     "preview": "astro preview --experimental-integrations"
   },
   "devDependencies": {
+    "@atomico/astro": "^0.2.2",
+    "@atomico/postcss-tokens": "^1.1.2",
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "astro": "^1.0.0-beta.24"
   },
   "dependencies": {
-    "@atomico/astro": "^0.2.0",
-    "atomico": "^1.55.2",
+    "@atomico/hooks": "^3.38.0",
+    "atomico": "^1.56.1",
     "formilk": "^0.21.0"
+  },
+  "postcss": {
+    "plugins": {
+      "@atomico/postcss-tokens": {}
+    }
   }
 }

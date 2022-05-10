@@ -1,0 +1,76 @@
+:root {
+  --color-text-primary: #abfffc;
+  --color-text-secondary: #fff;
+  --color-text-neutral: rgba(255, 255, 255, 0.75);
+  --max-width: 1080px;
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+.text-color-primary {
+  color: var(--color-text-primary);
+}
+
+.text-color-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-color-neutral {
+  color: var(--color-text-neutral);
+}
+
+.text-size-1 {
+  font-size: 12px;
+}
+
+.text-size-2 {
+  font-size: 14px;
+}
+
+.text-size-3 {
+  font-size: 16px;
+}
+
+.text-size-4 {
+  font-size: 18px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-reset {
+  margin: 0px;
+  line-height: 1.6;
+}
+
+atomico-header {
+  position: absolute;
+  top: 1rem;
+  left: 0px;
+  z-index: 1;
+  color: white;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.link {
+  text-transform: uppercase;
+}
+
+.link-header {
+  font-size: 12px;
+  letter-spacing: 5px;
+  padding: 0.5rem 1rem;
+}
