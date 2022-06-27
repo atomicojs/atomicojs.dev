@@ -1,0 +1,21 @@
+font:
+  display: unset
+  text: unset
+color:
+  primary: "#0A0024"
+  primary-title: "#ABFFFC"
+  primary-text: "#fff"
+  primary-subtext: rgba(255,255,255,.75)
+  card:
+    background: "linear-gradient(180deg, rgba(255,255,255,.05),rgba(180,180,180,.05))"
+    border: rgba(255,255,255,.1)
+section:
+  maxwidth: 1080px
+  minwidth: 420px
+  gap:
+    row: 40px
+    col: 40px
+size:
+  m: 20px
+card:
+  radius: ".8rem"

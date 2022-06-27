@@ -1,9 +1,16 @@
-:root {
-  --color-text-primary: #abfffc;
-  --color-text-secondary: #fff;
-  --color-text-neutral: rgba(255, 255, 255, 0.75);
-  --max-width: 1080px;
-  font-family: var(--font-body);
+@tokens "../tokens.yaml" (prefix: atomico) and (root:":root");
+
+body {
+  font-family: var(--atomico--font-body);
+  background: var(--atomico--color-primary);
+}
+
+atomico-header {
+  position: absolute;
+  top: 1rem;
+  left: 0px;
+  z-index: 1;
+  color: white;
 }
 
 h1,
@@ -12,19 +19,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-display);
+  font-family: var(--atomico--font-display);
+}
+
+.title-color-primary {
+  color: var(--atomico--color-primary-title);
 }
 
 .text-color-primary {
-  color: var(--color-text-primary);
+  color: var(--atomico--color-primary-text);
 }
 
-.text-color-secondary {
-  color: var(--color-text-secondary);
-}
-
-.text-color-neutral {
-  color: var(--color-text-neutral);
+.subtext-color-primary {
+  color: var(--atomico--color-primary-subtext);
 }
 
 .text-size-1 {
@@ -50,14 +57,6 @@ h6 {
 .text-reset {
   margin: 0px;
   line-height: 1.6;
-}
-
-atomico-header {
-  position: absolute;
-  top: 1rem;
-  left: 0px;
-  z-index: 1;
-  color: white;
 }
 
 a {
