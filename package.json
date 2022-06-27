@@ -10,13 +10,14 @@
     "preview": "astro preview --experimental-integrations"
   },
   "devDependencies": {
-    "@atomico/astro": "latest",
+    "@atomico/astro": "^0.3.1",
+    "@atomico/exports": "^0.34.0",
     "@atomico/postcss-tokens": "latest",
     "astro": "latest"
   },
   "dependencies": {
-    "atomico": "latest",
-    "@atomico/site":"latest"
+    "@atomico/site": "latest",
+    "atomico": "latest"
   },
   "postcss": {
     "plugins": {
