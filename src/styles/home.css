@@ -1,3 +1,43 @@
-.slide-fit-logo {
-  padding-top: 10%;
+img {
+  max-width: 100%;
+}
+.steps {
+  display: grid;
+  gap: var(--size-6);
+}
+.step {
+  display: grid;
+  gap: var(--size-4);
+}
+.step-img {
+  width: 100%;
+  max-width: 380px;
+}
+.icon-row {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  gap: var(--size-4);
+}
+.eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+}
+.menu {
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+.menu-items {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+.menu-group {
+  display: grid;
+  gap: 20px;
 }

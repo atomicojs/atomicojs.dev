@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 460 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-132.73,-159.731)">
+        <g id="step-2">
+            <g transform="matrix(1,0,0,1,132.73,160.567)">
+                <g id="step-21" serif:id="step-2">
+                    <text x="0px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,130,130);">f<tspan x="10.802px 21.603px 32.405px 43.206px 54.008px 64.809px 75.611px " y="12px 12px 12px 12px 12px 12px 12px ">unction</tspan></text>
+                    <text x="97.214px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(43,239,179);">c<tspan x="108.016px 118.817px 129.619px 140.42px 151.222px 162.023px 172.825px 183.627px " y="12px 12px 12px 12px 12px 12px 12px 12px ">omponent</tspan></text>
+                    <text x="194.428px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">(<tspan x="205.23px " y="12px ">{</tspan></text>
+                    <text x="226.833px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,233,162);">m<tspan x="237.634px 248.436px 259.237px 270.039px 280.841px 291.642px " y="12px 12px 12px 12px 12px 12px ">essage</tspan></text>
+                    <text x="313.245px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">}</text>
+                    <text x="324.047px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:white;">)</text>
+                    <text x="334.848px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">{</text>
+                    <text x="36px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,130,130);"><tspan x="36px 46.802px 57.603px 68.405px 79.206px 90.008px " y="40px 40px 40px 40px 40px 40px ">return</tspan></text>
+                    <text x="111.611px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(119,178,176);">&lt;</text>
+                    <text x="122.413px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(171,255,252);">h<tspan x="133.214px 144.016px 154.817px " y="40px 40px 40px ">ost</tspan></text>
+                    <text x="165.619px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(119,178,176);">&gt;</text>
+                    <text x="176.42px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:white;">H<tspan x="187.222px 198.023px 208.825px 219.627px " y="40px 40px 40px 40px ">ello</tspan></text>
+                    <text x="241.23px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">{</text>
+                    <text x="252.031px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,233,162);">m<tspan x="262.833px 273.634px 284.436px 295.237px 306.039px 316.841px " y="40px 40px 40px 40px 40px 40px ">essage</tspan></text>
+                    <text x="327.642px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">}</text>
+                    <text x="338.444px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(119,178,176);">&lt;<tspan x="349.245px " y="40px ">/</tspan></text>
+                    <text x="360.047px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(171,255,252);">h<tspan x="370.848px 381.65px 392.452px " y="40px 40px 40px ">ost</tspan></text>
+                    <text x="403.253px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(119,178,176);">&gt;</text>
+                    <text x="0px" y="68px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">}</text>
+                </g>
+            </g>
+            <g transform="matrix(5.22727,0,0,1.52941,-734.997,-481.786)">
+                <rect x="166" y="420" width="88" height="51" style="fill:rgb(43,239,179);fill-opacity:0;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 460 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-132.73,-399.731)">
+        <g id="step-4">
+            <g transform="matrix(1,0,0,1,132.73,400.567)">
+                <g id="step-41" serif:id="step-4">
+                    <text x="0px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,130,130);">c<tspan x="10.802px 21.603px 32.405px 43.206px 54.008px 64.809px 75.611px 86.413px 97.214px 108.016px 118.817px 129.619px 140.42px " y="12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px ">ustomElements</tspan></text>
+                    <text x="151.222px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">.</text>
+                    <text x="162.023px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,130,130);">d<tspan x="172.825px 183.627px 194.428px 205.23px 216.031px " y="12px 12px 12px 12px 12px ">efine</tspan></text>
+                    <text x="226.833px" y="12px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">(</text>
+                    <text x="36px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">&quot;</text>
+                    <text x="46.802px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:white;">a<tspan x="57.603px 68.405px 79.206px 90.008px 100.809px 111.611px " y="40px 40px 40px 40px 40px 40px ">tomico</tspan></text>
+                    <text x="122.413px" y="40px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">&quot;<tspan x="133.214px " y="40px ">,</tspan></text>
+                    <text x="36px" y="68px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,130,130);">c</text>
+                    <text x="46.802px" y="68px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">(</text>
+                    <text x="57.603px" y="68px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(255,130,130);">c<tspan x="68.405px 79.206px 90.008px 100.809px 111.611px 122.413px 133.214px 144.016px " y="68px 68px 68px 68px 68px 68px 68px 68px ">omponent</tspan></text>
+                    <text x="154.817px" y="68px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">)</text>
+                    <text x="0px" y="96px" style="font-family:'RobotoMono-Regular', 'Roboto Mono', monospace;font-size:16px;fill:rgb(178,178,178);">)</text>
+                </g>
+            </g>
+            <g transform="matrix(5.22727,0,0,1.99644,-734.997,-437.939)">
+                <rect x="166" y="420" width="88" height="51" style="fill:rgb(43,239,179);fill-opacity:0;"/>
+            </g>
+        </g>
+    </g>
+</svg>

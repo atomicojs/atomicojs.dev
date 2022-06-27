@@ -15,7 +15,7 @@
     "astro": "latest"
   },
   "dependencies": {
-    "@atomico/site": "latest",
+    "@atomico/site": "^0.0.3",
     "@atomico/tsconfig": "^1.0.0",
     "atomico": "latest"
   },
