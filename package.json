@@ -17,7 +17,7 @@
   "dependencies": {
     "@atomico/site": "^0.0.3",
     "@atomico/tsconfig": "^1.0.0",
-    "atomico": "latest"
+    "atomico": "^1.60.3"
   },
   "postcss": {
     "plugins": {
