@@ -10,7 +10,7 @@
     "preview": "astro preview --experimental-integrations"
   },
   "devDependencies": {
-    "@atomico/astro": "^0.3.1",
+    "@atomico/astro": "^0.4.0",
     "@atomico/postcss-tokens": "latest",
     "astro": "latest"
   },
