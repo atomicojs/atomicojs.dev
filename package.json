@@ -1,6 +1,5 @@
 {
-  "name": "@example/minimal",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,11 +11,12 @@
   "devDependencies": {
     "@atomico/astro": "^0.4.0",
     "@atomico/postcss-tokens": "latest",
-    "astro": "latest"
+    "@fontsource/poppins": "^4.5.8",
+    "astro": "latest",
+    "@atomico/tsconfig": "^1.0.0"
   },
   "dependencies": {
     "@atomico/site": "^0.1.0",
-    "@atomico/tsconfig": "^1.0.0",
     "atomico": "^1.60.3"
   },
   "postcss": {
