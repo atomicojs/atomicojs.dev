@@ -8,21 +8,21 @@ export const socials = {
 };
 
 export const author = {
-  link: "https://twitter.com/uppercod",
+  href: "https://twitter.com/uppercod",
 };
 
 export const menuHeader = [
   {
     title: "Github",
-    link: socials.github,
+    href: socials.github,
   },
   {
     title: "Documentation",
-    link: socials.documentation,
+    href: socials.documentation,
   },
   {
     title: "Support",
-    link: socials.discord,
+    href: socials.discord,
   },
 ];
 

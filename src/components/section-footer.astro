@@ -3,10 +3,10 @@ import { author, menuHeader } from "../data";
 import imgByUppercod from "../../public/by-uppercod.svg";
 ---
 <site-footer>
-    <a href={author.link} slot="logo" target="_blank">
+    <a href={author.href} slot="logo" target="_blank">
         <img  src={imgByUppercod} />
     </a>
     {
-        menuHeader.map((data)=><site-link href={data.href}>{data.title}</site-link>)
+        menuHeader.map((data)=><site-link target="_blank" href={data.href}>{data.title}</site-link>)
     }
 </site-footer>
