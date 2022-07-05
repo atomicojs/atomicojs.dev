@@ -1,4 +1,5 @@
 ---
+import * as data from "../data";
 import imgAuthor from "../../public/author.jpg";
 import iconDonation from "../../public/icon-donation.svg";
 import iconCode from "../../public/icon-code.svg";
@@ -6,7 +7,7 @@ import iconShare from "../../public/icon-share.svg";
 ---
 <site-section>
     <site-author>
-        <img src={imgAuthor} />
+        <img src={imgAuthor} alt="Author of Atomico JS"/>
     </site-author>
     <site-grid slot="right" gap={1}>
         <site-text elegant>AUTHOR'S MESSAGE</site-text>
@@ -16,21 +17,23 @@ import iconShare from "../../public/icon-share.svg";
     </site-grid>
     <site-text slot="right">
         Atomico is an open source project developed by
-        <a href=""> UpperCod</a>, we invite you to contribute to the
+        <a href={data.author.link}> UpperCod</a>, we invite you to contribute to the
         improvement of Atomico in:
     </site-text>
     <div class="icon-row" slot="right">
-        <img src={iconShare} alt="" />
+        <img src={iconShare} alt="Icon share" />
         <site-text slot="right">Using and sharing Atomico</site-text>
     </div>
     <div class="icon-row" slot="right">
-        <img src={iconCode} alt="" />
+        <img src={iconCode} alt="Icon code" />
         <site-text slot="right">
             Improving the source code, sharing bugs and new features
         </site-text>
     </div>
     <div class="icon-row" slot="right">
-        <img src={iconDonation} alt="" />
-        <site-text slot="right">Small donations</site-text>
+        <img src={iconDonation} alt="Icon donation" />
+        <site-text slot="right">
+            <a href={data.socials.koFi}>Small donations</a>
+        </site-text>
     </div>
 </site-section>

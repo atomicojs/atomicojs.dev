@@ -6,35 +6,36 @@ import imgStep4 from "../../public/step-4.svg";
 import iconWatch from "../../public/icon-watch.svg";
 import iconShadow from "../../public/icon-shadow.svg";
 import iconFunction from "../../public/icon-function.svg";
+import iconNotThis from "../../public/icon-not-this.svg";
 ---
 <site-section>
-    <site-title>
-        <h1>Simple, fast and light</h1>
-    </site-title>
+    <site-grid  gap={1}>
+        <site-text style="--font-spacing:var(--size-2)" elegant>WITH 3KB OF ATOMICO SIZE IT IS</site-text>
+        <site-title>
+            <h1>Simple, fast and light</h1>
+        </site-title>
+    </site-grid>
     <site-text>
-        ullamco culpa duis excepteur quis amet
-        <strong> ad proident Lorem </strong>
-        esse eu labore excepteur anim deserunt occaecat veniam dolor
-        enim ullamco qui dolor ad reprehenderit irure dolor Lorem
-        sunt magna et pariatur eu irure amet enim sit magna dolor ad
-        et aliquip ut labore culpa ad
+        Atomico is a microlibrary of modern syntax created by <strong>UpperCod</strong> that simplifies component creation by replacing the use of classes with <strong>functions to manage everything</strong>.
+        <br/>
+        Inside Atomico <img width="40px" src={iconNotThis} alt="Not this"> is an antipattern
     </site-text>
     <div class="icon-row">
         <img src={iconFunction} alt="" />
         <site-text>
-            Ullamco culpa duis excepteur quis amet ad
+            Functions and Hooks to compose your webcomponent
         </site-text>
     </div>
     <div class="icon-row">
         <img src={iconShadow} alt="" />
         <site-text>
-            Ullamco culpa duis excepteur quis amet ad
+            Atomico does not define a shadow DOM by default.
         </site-text>
     </div>
     <div class="icon-row">
         <img src={iconWatch} alt="" />
         <site-text>
-            Ullamco culpa duis excepteur quis amet ad
+            Reactive properties and attributes with support for more than 500 types.
         </site-text>
     </div>
     <div slot="right" class="steps">

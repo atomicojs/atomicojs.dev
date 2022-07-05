@@ -1,9 +1,12 @@
 ---
+import { author, menuHeader } from "../data";
 import imgByUppercod from "../../public/by-uppercod.svg";
 ---
 <site-footer>
-    <img slot="logo" src={imgByUppercod} />
-    <site-link>Twitter</site-link>
-    <site-link>Discord</site-link>
-    <site-link>Github</site-link>
+    <a href={author.link} slot="logo" target="_blank">
+        <img  src={imgByUppercod} />
+    </a>
+    {
+        menuHeader.map((data)=><site-link href={data.link}>{data.title}</site-link>)
+    }
 </site-footer>
