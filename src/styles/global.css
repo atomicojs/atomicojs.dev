@@ -1,3 +1,9 @@
+:root {
+  --site--color-build: #ffe600;
+  --site--color-library: #00ff90;
+  --site--color-framework: #0088ff;
+}
+
 html,
 body {
   width: 100%;
@@ -11,4 +17,10 @@ body {
 
 img {
   max-width: 100%;
+}
+
+site-text a {
+  text-decoration-style: wavy;
+  color: var(--color-accent);
+  font-weight: 500;
 }
