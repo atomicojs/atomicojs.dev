@@ -1,0 +1,37 @@
+---
+import imgLogo from "../../public/logo.svg";
+---
+<site-header>
+    <img src={imgLogo} slot="logo" />
+    <site-link slot="link">Github</site-link>
+    <site-link slot="link">Documentation</site-link>
+    <site-link slot="link">Support</site-link>
+    <site-menu slot="action">
+        <site-eye class="eye"></site-eye>
+        <div class="menu">
+            <div class="menu-group">
+                <site-text elegant>SOCIALS</site-text>
+                <div class="menu-items">
+                    <site-link>TWITTER</site-link>
+                    <site-link>LINKEDIN</site-link>
+                    <site-link>DISCORD</site-link>
+                    <site-link>GITHUB</site-link>
+                </div>
+                <site-text elegant>STARTED</site-text>
+                <div class="menu-items">
+                    <site-link>Get started</site-link>
+                    <site-link>Template</site-link>
+                    <site-link>Props</site-link>
+                    <site-link>Hooks</site-link>
+                </div>
+                <site-text elegant>UTILITIES</site-text>
+                <div class="menu-items">
+                    <site-link>@atomico/exports</site-link>
+                    <site-link>@atomico/ui</site-link>
+                    <site-link>@atomico/hooks</site-link>
+                    <site-link>More</site-link>
+                </div>
+            </div>
+        </div>
+    </site-menu>
+</site-header>

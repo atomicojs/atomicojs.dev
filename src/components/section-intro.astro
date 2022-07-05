@@ -1,0 +1,74 @@
+---
+import imgStep1 from "../../public/step-1.svg";
+import imgStep2 from "../../public/step-2.svg";
+import imgStep3 from "../../public/step-3.svg";
+import imgStep4 from "../../public/step-4.svg";
+import iconWatch from "../../public/icon-watch.svg";
+import iconShadow from "../../public/icon-shadow.svg";
+import iconFunction from "../../public/icon-function.svg";
+---
+<site-section>
+    <site-title>
+        <h1>Simple, fast and light</h1>
+    </site-title>
+    <site-text>
+        ullamco culpa duis excepteur quis amet
+        <strong> ad proident Lorem </strong>
+        esse eu labore excepteur anim deserunt occaecat veniam dolor
+        enim ullamco qui dolor ad reprehenderit irure dolor Lorem
+        sunt magna et pariatur eu irure amet enim sit magna dolor ad
+        et aliquip ut labore culpa ad
+    </site-text>
+    <div class="icon-row">
+        <img src={iconFunction} alt="" />
+        <site-text>
+            Ullamco culpa duis excepteur quis amet ad
+        </site-text>
+    </div>
+    <div class="icon-row">
+        <img src={iconShadow} alt="" />
+        <site-text>
+            Ullamco culpa duis excepteur quis amet ad
+        </site-text>
+    </div>
+    <div class="icon-row">
+        <img src={iconWatch} alt="" />
+        <site-text>
+            Ullamco culpa duis excepteur quis amet ad
+        </site-text>
+    </div>
+    <div slot="right" class="steps">
+        <div class="step">
+            <site-count color="#FF0099" value={1}>
+                IMPORT
+            </site-count>
+            <site-card>
+                <img class="step-img" src={imgStep1} alt="" />
+            </site-card>
+        </div>
+        <div class="step">
+            <site-count color="#FFE600" value={2}>
+                WEBCOMPONENT
+            </site-count>
+            <site-card>
+                <img class="step-img" src={imgStep2} alt="" />
+            </site-card>
+        </div>
+        <div class="step">
+            <site-count color="#00FF90" value={3}>
+                STYLES
+            </site-count>
+            <site-card>
+                <img class="step-img" src={imgStep3} alt="" />
+            </site-card>
+        </div>
+        <div class="step">
+            <site-count color="#0088FF" value={4}>
+                DECLARATIONS
+            </site-count>
+            <site-card>
+                <img class="step-img" src={imgStep4} alt="" />
+            </site-card>
+        </div>
+    </div>
+</site-section>

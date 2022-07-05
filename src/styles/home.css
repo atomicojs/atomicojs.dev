@@ -1,6 +1,3 @@
-img {
-  max-width: 100%;
-}
 .steps {
   display: grid;
   gap: var(--size-6);
