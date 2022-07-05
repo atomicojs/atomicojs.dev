@@ -55,19 +55,31 @@ export const menuModal = [
   {
     title: "STARTED",
     items: [
-      { title: "Get started", href: "#" },
-      { title: "Template", href: "#" },
-      { title: "Props", href: "#" },
-      { title: "Hooks", href: "#" },
+      {
+        title: "Getting started",
+        href: "https://atomico.gitbook.io/doc/getting-started-with-atomico",
+      },
+      {
+        title: "Template",
+        href: "https://atomico.gitbook.io/doc/api/virtualdom",
+      },
+      { title: "Props", href: "https://atomico.gitbook.io/doc/api/props" },
+      { title: "Hooks", href: "https://atomico.gitbook.io/doc/api/hooks" },
     ],
   },
   {
     title: "UTILITIES",
     items: [
-      { title: "@atomico/exports", href: "#" },
-      { title: "@atomico/hooks", href: "#" },
-      { title: "@atomico/ui", href: "#" },
-      { title: "More", href: "#" },
+      {
+        title: "@atomico/exports",
+        href: "https://atomico.gitbook.io/doc/atomico/introduction",
+      },
+      {
+        title: "@atomico/hooks",
+        href: "https://atomico.gitbook.io/doc/atomico/atomico-hooks",
+      },
+      { title: "@atomico/ui(Formilk)", href: "https://formilk.netlify.app/" },
+      { title: "More", href: "https://atomico.gitbook.io/doc/" },
     ],
   },
 ];
