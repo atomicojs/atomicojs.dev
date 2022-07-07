@@ -18,10 +18,5 @@
   "dependencies": {
     "@atomico/site": "^0.1.0",
     "atomico": "^1.60.3"
-  },
-  "postcss": {
-    "plugins": {
-      "@atomico/postcss-tokens": {}
-    }
   }
 }
