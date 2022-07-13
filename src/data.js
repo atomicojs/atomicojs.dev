@@ -1,3 +1,13 @@
+import ImageSocial from "../public/social.png";
+
+export const SEO = {
+  image: ImageSocial,
+  site: "@atomicojs",
+  title: "Atomico webcomponents",
+  description:
+    "OSS project to create interfaces using webcomponents with simple code, fast and light.",
+};
+
 export const socials = {
   twitter: "https://twitter.com/atomicojs",
   documentation: "https://atomico.gitbook.io/doc/",
