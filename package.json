@@ -11,12 +11,12 @@
   "devDependencies": {
     "@atomico/astro": "^0.4.0",
     "@atomico/postcss-tokens": "latest",
+    "@atomico/tsconfig": "^1.0.0",
     "@fontsource/poppins": "^4.5.8",
-    "astro": "latest",
-    "@atomico/tsconfig": "^1.0.0"
+    "astro": "latest"
   },
   "dependencies": {
-    "@atomico/site": "^0.1.0",
+    "@atomico/site": "^0.2.0",
     "atomico": "^1.60.3"
   }
 }
