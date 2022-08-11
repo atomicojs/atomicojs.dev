@@ -3,10 +3,11 @@ import LayoutDefault from "../layouts/default.astro"
 import imgReactCounter from "../../public/atomico-counter.svg";
 import imgAtomicoCounter from "../../public/react-counter.svg";
 import SectionTrust from "../components/section-trust.astro";
+import imgWhy from "../../public/social-why.png";
 
 ---
 <script>import("@atomico/compare-content")</script>
-<LayoutDefault>
+<LayoutDefault image={imgWhy} title="¿Por qué Atomico js webcomponents?" description="Atomico posee un tamaño como modulo de 4kB pero al crear el js como bundle su tamaño es inferior a 2.5kB (GZIP), Esto hace que Atomico sea una librería de increíblemente ligera.">
 	<site-section>
 		<site-grid slot="content" align="top">
 			<site-big-title>UNO</site-big-title>
