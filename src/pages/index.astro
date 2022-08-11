@@ -1,48 +1,27 @@
 ---
-import "../styles/global.css";
-import "../styles/home.css";
-import "@atomico/site";
-import "@fontsource/poppins";
-
-import { SEO } from "../data";
-
-import SectionHeader from "../components/section-header.astro";
+import LayoutDefault from "../layouts/default.astro"
 import SectionIsotype from "../components/section-isotype.astro";
 import SectionIntro from "../components/section-intro.astro";
 import SectionEcosystem from "../components/section-ecosystem.astro";
+import SectionTrust from "../components/section-trust.astro";
 import SectionAuthor from "../components/section-author.astro";
-import SectionFooter from "../components/section-footer.astro";
+
 ---
 
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{SEO.title}</title>
-	<script>import("@atomico/site");</script>
-	<meta name="twitter:image:src" content={SEO.image} />
-	<meta name="twitter:site" content={SEO.site} />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={SEO.description} />
-	<meta name="twitter:description" content={SEO.description} />
-	<meta name="description" content={SEO.description}/>
-	<meta property="og:image" content={SEO.image} />
-	<meta property="og:image:alt" content={SEO.description} />
-</head>
-<body>
-	<SectionHeader></SectionHeader>
+<LayoutDefault>
 	<SectionIsotype></SectionIsotype>
 	<SectionIntro></SectionIntro>
+	<SectionTrust>
+		<h1 slot="title">They trust the use of Atomico JS</h1>	
+		<div slot="content">
+			<site-text>
+				We thank all the developers and companies that make it possible to use Atomico in their projects.
+				<br/>
+				<br/>
+				If you already use Atomico we want to know your experience, doubts or ideas.
+			</site-text>
+		</div>
+	</SectionTrust>	
 	<SectionEcosystem></SectionEcosystem>
 	<SectionAuthor></SectionAuthor>
-	<SectionFooter></SectionFooter>
-	<script is:inline>
-			document.querySelectorAll("template[shadowroot]").forEach((template) => {
-				const mode = template.getAttribute("shadowroot");
-				const shadowRoot = template.parentNode.attachShadow({ mode });
-				shadowRoot.appendChild(template.content);
-				template.remove();
-			});
-		</script>
-</body>
-</html>
+</LayoutDefault>

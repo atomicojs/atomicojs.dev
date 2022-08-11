@@ -1,0 +1,47 @@
+---
+import  logoIbmIx  from "../../public/logos/logo-ibm-ix.svg";
+import  logo2Brains  from "../../public/logos/logo-2brains.svg";
+import  logoBarmer  from "../../public/logos/logo-barmer.svg";
+import  logoCajaLosAndes  from "../../public/logos/logo-caja-los-andes.png";
+import  logoClinicaAlemana  from "../../public/logos/logo-clinica-alemana.png";
+import  logoNacionalMonteDePiedad  from "../../public/logos/logo-nacional-monte-de-piedad.png";
+import  logoVidaSecurity  from "../../public/logos/logo-vida-security.svg";
+import  logoUpper  from "../../public/logos/logo-upper.svg";
+import  logoMasPractica  from "../../public/logos/logo-mas-practica.png";
+---
+
+<site-section>
+    <site-title>
+        <slot name="title"/>
+    </site-title>
+    <slot name="content"/>
+    <site-grid columns="2, 2 768px, 3 980px" slot="right">
+        <site-card  class="image-center">
+            <img src={logoIbmIx} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logo2Brains} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logoBarmer} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logoNacionalMonteDePiedad} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logoCajaLosAndes} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logoClinicaAlemana} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logoVidaSecurity} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logoUpper} alt="Logo Ibm iX">
+        </site-card>
+        <site-card  class="image-center">
+            <img src={logoMasPractica} alt="Logo Ibm iX">
+        </site-card>
+    </site-grid>
+</site-section>

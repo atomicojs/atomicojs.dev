@@ -1,0 +1,41 @@
+---
+import "../styles/global.css";
+import "../styles/home.css";
+import "@atomico/site";
+import "@fontsource/poppins";
+import "@fontsource/poppins/600.css";
+
+import { SEO } from "../data";
+import SectionHeader from "../components/section-header.astro";
+import SectionFooter from "../components/section-footer.astro";
+---
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{SEO.title}</title>
+	<script>import("@atomico/site");</script>
+	<meta name="twitter:image:src" content={SEO.image} />
+	<meta name="twitter:site" content={SEO.site} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={SEO.description} />
+	<meta name="twitter:description" content={SEO.description} />
+	<meta name="description" content={SEO.description}/>
+	<meta property="og:image" content={SEO.image} />
+	<meta property="og:image:alt" content={SEO.description} />
+</head>
+<body>
+    <SectionHeader></SectionHeader>   
+	<slot></slot>    
+    <SectionFooter></SectionFooter>
+	<script is:inline>
+        document.querySelectorAll("template[shadowroot]").forEach((template) => {
+            const mode = template.getAttribute("shadowroot");
+            const shadowRoot = template.parentNode.attachShadow({ mode });
+            shadowRoot.appendChild(template.content);
+            template.remove();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+---
+import LayoutDefault from "../layouts/default.astro"
+import imgReactCounter from "../../public/atomico-counter.svg";
+import imgAtomicoCounter from "../../public/react-counter.svg";
+import SectionTrust from "../components/section-trust.astro";
+
+
+---
+<script>import("@atomico/compare-content")</script>
+<LayoutDefault>
+	<site-section>
+		<site-grid slot="content" align="top">
+			<site-big-title>ONE</site-big-title>
+			<site-title>
+				<h1>light size</h1>
+			</site-title>
+			<site-grid columns="1, 2 520px" align="top">
+				<site-grid>
+					<site-text>
+						Atomico has a modulus size of 4kB but when packaged its size is less than 3kB (GZIP).
+					</site-text>
+					<site-text>
+							Realizamores una comparación usando como base
+							los webcomponente counter existente en
+						<a
+							href="https://webcomponents.dev"
+							target="_blank"
+						>
+							{" "}
+							webcomponents.dev{" "}
+						</a>
+						de <strong>Atomico</strong>,{" "}
+						<strong>Lit</strong>, <strong>Preact</strong> y{" "}
+						<strong>React</strong>.
+					</site-text>
+				</site-grid>
+				<site-grid gap={4}>
+					<site-text>
+						componente creado con Atomico a su vez podrá:
+					</site-text>
+					<site-count value={1}>
+						<site-text>
+							Tamaño del JS (Libreria + Componente)
+							enviados al navegador
+						</site-text>
+					</site-count>
+					<site-count value={1}>
+						<site-text>
+							Tiempo de renderización del componente en el
+							browser.
+						</site-text>
+					</site-count>
+					<site-count value={1}>
+						<site-text>
+							Lineas de codigo escritas para resolver el
+							webcomponente.
+						</site-text>
+					</site-count>
+				</site-grid>
+			</site-grid>
+			<site-grid>
+				<site-graph-diff
+					data={[
+						{
+							label: "Atomico",
+							items: [
+								{
+									label: "10.9kB",
+									value: 10.9,
+								},
+
+								{
+									label: "8.18ms",
+									value: 8.18,
+								},
+								{
+									label: "39 lines",
+									value: 39,
+								},
+							],
+						},
+						{
+							label: "Lit",
+							items: [
+								{
+									label: "19.8kB",
+									value: 19.8,
+								},
+
+								{
+									label: "7.86ms",
+									value: 7.86,
+								},
+								{
+									label: "56 lines",
+									value: 56,
+								},
+							],
+						},
+						{
+							label: "Preact",
+							items: [
+								{
+									label: "22kB",
+									value: 22,
+								},
+
+								{
+									label: "9ms",
+									value: 9,
+								},
+								{
+									label: "36 lines",
+									value: 36,
+								},
+							],
+						},
+						{
+							label: "React",
+							hide: false,
+							items: [
+								{
+									label: "101.9kB",
+									value: 101.9,
+								},
+								{
+									label: "70.9ms",
+									value: 70.9,
+								},
+								{
+									label: "40 lines",
+									value: 40,
+								},
+							],
+						},
+					]}
+				></site-graph-diff>
+			</site-grid>
+		</site-grid>
+	</site-section>
+	<site-section>
+		<site-grid slot="content" align="top">
+			<site-big-title>DOS</site-big-title>
+			<site-title>
+				<h1>Curba de aprendisaje</h1>
+			</site-title>
+			<site-grid columns="1, 2 520px" align="top">
+				<site-grid>
+					<site-text>
+						Hoy el mercado es laboral esta dominado por
+						React y esto ha provocado que por defecto el
+						camino frontend este marcado por una ruta hacia
+						React. Atomico posee sintaxis inspirada en React
+						Hooks reduciendo la fricción ante su adopcion.
+						<br />
+						<br />
+						<site-text>
+							<strong>
+								Si ya sabes React ya sabes Atomico al
+								90%
+							</strong>
+							, las empresas que usan Atomico JS buscan
+							desarrolladores con conocimiento en React
+							para el uso de Atomico JS.
+						</site-text>
+					</site-text>
+				</site-grid>
+				<site-card>
+					<atomico-compare-content style={`padding: var(--size-4)`}>
+						<img
+							slot="content"
+							src={imgReactCounter}
+							alt="React counter"
+						/>
+						<img
+							slot="content"
+							src={imgAtomicoCounter}
+							alt="Atomico counter"
+						/>
+					</atomico-compare-content>
+				</site-card>
+			</site-grid>
+		</site-grid>
+	</site-section>
+	<site-section>
+		<site-grid slot="content" align="top">
+			<site-big-title>TRES</site-big-title>
+			<site-title>
+				<h1>Integracion</h1>
+			</site-title>
+			<site-grid columns="1, 2 520px" align="top">
+				<site-grid>
+					<site-text>
+						Atomico no lucha contra React se Integra ya que
+						asi busca facilitar la adopción de los
+						webcomponents, Con @atomico/react podrás usar
+						webcomponents creados con Atomico en
+						React/Preact con homologación de tipos y
+						sintaxis.
+					</site-text>
+				</site-grid>
+				<site-grid gap={4}>
+					<site-text>
+						La gran ventaja de esta integracion es que
+						componente creado con Atomico podra ser usado en
+						en html, vue, preact, react, svelte, solid u
+						otra libreria.
+					</site-text>
+				</site-grid>
+			</site-grid>
+		</site-grid>
+	</site-section>	
+	<SectionTrust>
+		<h1 slot="title">They trust the use of Atomico JS</h1>	
+		<div slot="content">
+			<site-text>
+				We thank all the developers and companies that make it possible to use Atomico in their projects.
+				<br/>
+				<br/>
+				If you already use Atomico we want to know your experience, doubts or ideas.
+			</site-text>
+		</div>
+	</SectionTrust>	
+</LayoutDefault>

@@ -4,7 +4,9 @@ import imgLogo from "../../public/logo.svg";
 ---
 
 <site-header>
-    <img src={imgLogo} slot="logo" alt="Logo atomicojs"/>
+    <a href="/" slot="logo">
+        <img src={imgLogo}  alt="Logo atomicojs"/>
+    </a>
     {
         menuHeader.map((data)=><site-link href={data.href} slot="link" target="_blank">{data.title}</site-link>)
     }
@@ -13,7 +15,7 @@ import imgLogo from "../../public/logo.svg";
         <div class="menu">
             <div class="menu-group">
                 {menuModal.map((data)=><div>
-                    <site-text elegant>{data.title}</site-text>
+                    <site-text size={3} color="accent" elegant>{data.title}</site-text>
                     <div class="menu-items">
                         {data.items.map((data)=><site-link href={data.href} slot="link" target="_blank">{data.title}</site-link>)}
                     </div>

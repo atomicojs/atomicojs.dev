@@ -16,7 +16,8 @@
     "astro": "latest"
   },
   "dependencies": {
-    "@atomico/site": "^0.2.0",
+    "@atomico/compare-content": "^1.0.5",
+    "@atomico/site": "^0.4.0",
     "atomico": "^1.60.3"
   }
 }

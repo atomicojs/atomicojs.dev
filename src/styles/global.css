@@ -24,3 +24,7 @@ site-text a {
   color: var(--color-accent);
   font-weight: 500;
 }
+
+.image-center img {
+  margin: auto;
+}
