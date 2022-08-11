@@ -28,3 +28,7 @@ site-text a {
 .image-center img {
   margin: auto;
 }
+
+site-header:not(:defined) {
+  visibility: hidden;
+}
