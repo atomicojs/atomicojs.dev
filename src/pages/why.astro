@@ -17,43 +17,35 @@ import SectionTrust from "../components/section-trust.astro";
 			<site-grid columns="1, 2 520px" align="top">
 				<site-grid>
 					<site-text>
-						Atomico has a modulus size of 4kB but when packaged its size is less than 3kB (GZIP).
+						Atomico has a size as a module of 4 kB but being bundled JS its size is less than 2.5kB (GZIP), resulting in an incredibly light code.
 					</site-text>
 					<site-text>
-							Realizamores una comparación usando como base
-							los webcomponente counter existente en
-						<a
-							href="https://webcomponents.dev"
-							target="_blank"
-						>
-							{" "}
-							webcomponents.dev{" "}
-						</a>
-						de <strong>Atomico</strong>,{" "}
-						<strong>Lit</strong>, <strong>Preact</strong> y{" "}
-						<strong>React</strong>.
+						We will show the benefits of Atomico through a comparison, 
+						we have used as a basis for this comparison the existing 
+						counter webcomponents in
+						<a target="_blank" href="https://webcomponents.dev">webcomponents.dev</a>
+						of <strong>Atomico</strong>,
+						<strong>Lit</strong>, <strong>Preact</strong> and 
+						<strong>React</strong>  as a base.
 					</site-text>
 				</site-grid>
 				<site-grid gap={4}>
 					<site-text>
-						componente creado con Atomico a su vez podrá:
+						With this comparison we get to know:
 					</site-text>
 					<site-count value={1}>
 						<site-text>
-							Tamaño del JS (Libreria + Componente)
-							enviados al navegador
+							JS Size (Library + Component) sent to browser
 						</site-text>
 					</site-count>
-					<site-count value={1}>
+					<site-count value={2}>
 						<site-text>
-							Tiempo de renderización del componente en el
-							browser.
+							Load time of the first render of 1000 components in the browser.
 						</site-text>
 					</site-count>
-					<site-count value={1}>
+					<site-count value={3}>
 						<site-text>
-							Lineas de codigo escritas para resolver el
-							webcomponente.
+							Lines of code written to solve the webcomponent.
 						</site-text>
 					</site-count>
 				</site-grid>
@@ -140,28 +132,24 @@ import SectionTrust from "../components/section-trust.astro";
 	</site-section>
 	<site-section>
 		<site-grid slot="content" align="top">
-			<site-big-title>DOS</site-big-title>
+			<site-big-title>Two</site-big-title>
 			<site-title>
-				<h1>Curba de aprendisaje</h1>
+				<h1>Learning curve</h1>
 			</site-title>
 			<site-grid columns="1, 2 520px" align="top">
 				<site-grid>
 					<site-text>
-						Hoy el mercado es laboral esta dominado por
-						React y esto ha provocado que por defecto el
-						camino frontend este marcado por una ruta hacia
-						React. Atomico posee sintaxis inspirada en React
-						Hooks reduciendo la fricción ante su adopcion.
+						Today the job market is dominated by React and this has caused 
+						the frontend route to be marked by React. 
+						Atomico has syntax inspired by React Hooks, 
+						reducing the friction of its adoption.
 						<br />
 						<br />
 						<site-text>
 							<strong>
-								Si ya sabes React ya sabes Atomico al
-								90%
+								If you know React you know Atomico at 90%
 							</strong>
-							, las empresas que usan Atomico JS buscan
-							desarrolladores con conocimiento en React
-							para el uso de Atomico JS.
+							, Most companies using Atomico thanks to its similarity to React.
 						</site-text>
 					</site-text>
 				</site-grid>
@@ -184,27 +172,22 @@ import SectionTrust from "../components/section-trust.astro";
 	</site-section>
 	<site-section>
 		<site-grid slot="content" align="top">
-			<site-big-title>TRES</site-big-title>
+			<site-big-title>Three</site-big-title>
 			<site-title>
-				<h1>Integracion</h1>
+				<h1>Integration and Coverage</h1>
 			</site-title>
 			<site-grid columns="1, 2 520px" align="top">
 				<site-grid>
 					<site-text>
-						Atomico no lucha contra React se Integra ya que
-						asi busca facilitar la adopción de los
-						webcomponents, Con @atomico/react podrás usar
-						webcomponents creados con Atomico en
-						React/Preact con homologación de tipos y
-						sintaxis.
+						Atomico is easily integrated into any existing project, thanks to a series of tools that improve coverage at the package level and best practices.
 					</site-text>
 				</site-grid>
 				<site-grid gap={4}>
 					<site-text>
-						La gran ventaja de esta integracion es que
-						componente creado con Atomico podra ser usado en
-						en html, vue, preact, react, svelte, solid u
-						otra libreria.
+						A component created with Atomico can be used in Html, Vue, Preact, React, Svelte, Solid or any other library.
+						<br/>
+						<br/>
+						In summary <strong>1 single code to support multiple libraries.</strong>
 					</site-text>
 				</site-grid>
 			</site-grid>
