@@ -127,6 +127,27 @@ import SectionTrust from "../components/section-trust.astro";
 						},
 					]}
 				></site-graph-diff>
+				<site-grid  columns="1, 2 520px" >
+					<site-grid   align="top"  gap={4}>
+						Segun el contexto de la comparativa podemos concluir que:
+						<site-count value={1}>
+							<site-text>
+								<strong>Atomico es 8.6 veces más rápido que React</strong> en primera renderización.
+							</site-text>
+						</site-count>
+						<site-count value={2}>
+							<site-text>
+								Atomico requiere solo el 75% de las líneas de código de Lit para resolver el mismo objetivo.
+							</site-text>
+						</site-count>
+					</site-grid>
+					<site-text>
+						<strong>Atómico es ligero en tamaño y en líneas de código</strong>. Escribir menos líneas de código le ayudarán a mejorar su productividad al desarrollar y escalar su interfaz.
+						<br/>
+						<br/>
+						Los resultados obtenidos son gracias a la herramienta <a target="_blank" href="https://github.com/Polymer/tachometer">Tachometer</a>, usted puede el conocer el código de esta comparativa en <a target="_blank" href="https://github.com/atomicojs/perf">atomicojs/perf</a>.
+					</site-text>
+				</site-grid>
 			</site-grid>
 		</site-grid>
 	</site-section>
