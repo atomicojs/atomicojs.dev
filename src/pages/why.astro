@@ -8,11 +8,20 @@ import imgWhy from "../../public/social-why.png";
 ---
 <script>import("@atomico/compare-content")</script>
 <LayoutDefault image={imgWhy} title="Why Atomico js webcomponents?" description="Atomico has a size as a module of 4 kB but being bundled JS its size is less than 2.5kB (GZIP), resulting in an incredibly light code">
+	<site-section class="hero">
+		<site-title size={8}>
+			<h1>Why Atomico webcomponents?</h1>
+		</site-title>
+		<site-text>We invite you to know 3 reasons why to use Atomico webcomponents</site-text>
+		<div>
+			<site-button href="/why-es" small color="accent">Leer en español</site-button>
+		</div>
+	</site-section>
 	<site-section>
 		<site-grid slot="content" align="top">
 			<site-big-title>ONE</site-big-title>
 			<site-title>
-				<h1>light size</h1>
+				<h2>light size</h2>
 			</site-title>
 			<site-grid columns="1, 2 520px" align="top">
 				<site-grid>
@@ -155,7 +164,7 @@ import imgWhy from "../../public/social-why.png";
 		<site-grid slot="content" align="top">
 			<site-big-title>Two</site-big-title>
 			<site-title>
-				<h1>Learning curve</h1>
+				<h2>Learning curve</h2>
 			</site-title>
 			<site-grid columns="1, 2 520px" align="top">
 				<site-grid>
@@ -195,7 +204,7 @@ import imgWhy from "../../public/social-why.png";
 		<site-grid slot="content" align="top">
 			<site-big-title>Three</site-big-title>
 			<site-title>
-				<h1>Integration and Coverage</h1>
+				<h2>Integration and Coverage</h2>
 			</site-title>
 			<site-grid columns="1, 2 520px" align="top">
 				<site-grid>
@@ -215,7 +224,7 @@ import imgWhy from "../../public/social-why.png";
 		</site-grid>
 	</site-section>	
 	<SectionTrust>
-		<h1 slot="title">They trust the use of Atomico JS</h1>	
+		<h2 slot="title">They trust the use of Atomico JS</h2>	
 		<div slot="content">
 			<site-text>
 				We thank all the developers and companies that make it possible to use Atomico in their projects.

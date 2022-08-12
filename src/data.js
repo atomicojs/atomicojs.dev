@@ -31,7 +31,7 @@ export const menuHeader = [
     href: socials.documentation,
   },
   {
-    title: "Why Atomico JS?",
+    title: "Why Atomico?",
     href: "/why",
   },
 ];
@@ -66,7 +66,7 @@ export const menuModal = [
     title: "STARTED",
     items: [
       {
-        title: "Why Atomico JS?",
+        title: "Why Atomico?",
         href: "/why",
       },
       {
