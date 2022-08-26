@@ -5,7 +5,7 @@ import imgLogo from "../../public/logo.svg";
 
 <site-header >
     <a href="/"  slot="logo">
-        <img src={imgLogo}  alt="Logo atomicojs"/>
+        <img src={imgLogo} loading="lazy" width="160" height="35" alt="Logo atomicojs"/>
     </a>
     {
         menuHeader.map((data)=><site-link href={data.href} slot="link" target="_blank">{data.title}</site-link>)
