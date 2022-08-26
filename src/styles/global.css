@@ -27,6 +27,11 @@ site-text a {
 
 .image-center img {
   margin: auto;
+  object-fit: contain;
+}
+
+.image-author {
+  object-fit: cover;
 }
 
 site-header:not(:defined) {
@@ -40,4 +45,10 @@ site-header:not(:defined) {
 
 .hero + site-section {
   padding-top: 0px;
+}
+
+@media (max-width: 420px) {
+  .image-author {
+    height: 320px;
+  }
 }
