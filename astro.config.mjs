@@ -8,5 +8,13 @@ export default defineConfig({
       noExternal: true,
     },
   },
-  integrations: [Atomico({ cssLiterals: { minify: true, postcss: true } })],
+  integrations: [
+    Atomico({
+      cssLiterals: { minify: true, postcss: true },
+      customElements: {
+        prefix: "a",
+        define: ["components/**/*"],
+      },
+    }),
+  ],
 });
