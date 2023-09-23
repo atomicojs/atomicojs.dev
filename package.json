@@ -9,15 +9,16 @@
     "preview": "astro preview --experimental-integrations"
   },
   "devDependencies": {
-    "@atomico/astro": "^0.7.0",
+    "@atomico/astro": "^0.8.0",
     "@atomico/postcss-tokens": "^2.0.3",
     "@atomico/tsconfig": "^1.0.0",
+    "@atomico/vite": "^2.11.2",
     "@fontsource/poppins": "^4.5.8",
-    "astro": "^1.7.1"
+    "astro": "^3.1.2"
   },
   "dependencies": {
     "@atomico/compare-content": "^1.0.5",
-    "@atomico/site": "^0.6.0",
-    "atomico": "^1.68.0"
+    "@atomico/site": "^0.7.1",
+    "atomico": "^1.74.0"
   }
 }

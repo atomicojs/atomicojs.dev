@@ -9,7 +9,12 @@ function myComponent() {
     }, 1000);
   }, []);
 
-  return <host>Hello world! : {state}</host>;
+  return (
+    <host>
+      Hello world! : {state}
+      <button innerHTML="welcome"></button>
+    </host>
+  );
 }
 
 export const MyComponent = c(myComponent);
