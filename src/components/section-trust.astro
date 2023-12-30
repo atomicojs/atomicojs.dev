@@ -8,40 +8,41 @@ import  logoNacionalMonteDePiedad  from "../../public/logos/logo-nacional-monte-
 import  logoVidaSecurity  from "../../public/logos/logo-vida-security.svg";
 import  logoUpper  from "../../public/logos/logo-upper.svg";
 import  logoMasPractica  from "../../public/logos/logo-mas-practica.png";
+import { SiteSection, SiteTitle, SiteGrid, SiteCard } from "@atomico/site";
 ---
 
-<site-section>
-    <site-title>
+<SiteSection>
+    <SiteTitle slot="left">
         <slot name="title"/>
-    </site-title>
-    <slot name="content"/>
-    <site-grid columns="2, 2 768px, 3 980px" slot="right">
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoIbmIx} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logo2Brains} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoBarmer} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoNacionalMonteDePiedad} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoCajaLosAndes} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoClinicaAlemana} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoVidaSecurity} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoUpper} alt="Logo Ibm iX">
-        </site-card>
-        <site-card  class="image-center">
-            <img width="140" height="90" loading="lazy" src={logoMasPractica} alt="Logo Ibm iX">
-        </site-card>
-    </site-grid>
-</site-section>
+    </SiteTitle>
+    <slot slot="left" name="content"/>
+    <SiteGrid columns="2, 2 768px, 3 980px" slot="right">
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoIbmIx.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logo2Brains.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoBarmer.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoNacionalMonteDePiedad.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoCajaLosAndes.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoClinicaAlemana.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoVidaSecurity.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoUpper.src} alt="Logo Ibm iX">
+        </SiteCard>
+        <SiteCard  class="image-center">
+            <img width="140" height="90" loading="lazy" src={logoMasPractica.src} alt="Logo Ibm iX">
+        </SiteCard>
+    </SiteGrid>
+</SiteSection>

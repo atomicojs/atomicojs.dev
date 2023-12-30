@@ -1,16 +1,14 @@
 ---
 import "../styles/global.css";
 import "../styles/home.css";
-import "@atomico/site";
+import "@atomico/site/tokens.css";
+// import "@atomico/site";
 import "@fontsource/poppins";
 import "@fontsource/poppins/600.css";
-
 import { SEO } from "../data";
 import SectionHeader from "../components/section-header.astro";
 import SectionFooter from "../components/section-footer.astro";
-
 const Page = {...SEO,...Astro.props};
-
 ---
 
 <html lang="en">
@@ -18,20 +16,19 @@ const Page = {...SEO,...Astro.props};
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{Page.title}</title>
-	<script>import("@atomico/site");</script>
-	<meta name="twitter:image:src" content={Page.image} />
+	<meta name="twitter:image:src" content={Page.image.src} />
 	<meta name="twitter:site" content={Page.site} />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={Page.description} />
 	<meta name="twitter:description" content={Page.description} />
 	<meta name="description" content={Page.description}/>
-	<meta property="og:image" content={Page.image} />
+	<meta property="og:image" content={Page.image.src} />
 	<meta property="og:image:alt" content={Page.description} />
 </head>
 <body>
-    <SectionHeader></SectionHeader>   
+    <!-- <SectionHeader></SectionHeader>    -->
 	<slot></slot>    
-    <SectionFooter></SectionFooter>
+    <!-- <SectionFooter></SectionFooter> -->
 	<script is:inline>
         document.querySelectorAll("template[shadowroot]").forEach((template) => {
             const mode = template.getAttribute("shadowroot");
@@ -40,5 +37,7 @@ const Page = {...SEO,...Astro.props};
             template.remove();
         });
     </script>
+	<!--NO:SSG-->
+	<script>import("@atomico/site");</script>
 </body>
 </html>

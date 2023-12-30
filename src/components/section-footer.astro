@@ -4,7 +4,7 @@ import imgByUppercod from "../../public/by-uppercod.svg";
 ---
 <site-footer>
     <a href={author.href} slot="logo" target="_blank">
-        <img  src={imgByUppercod} alt="Logo Upper" loading="lazy" width="196" height="63"/>
+        <img  src={imgByUppercod.src} alt="Logo Upper" loading="lazy" width="196" height="63"/>
     </a>
     {
         menuHeader.map((data)=><site-link target="_blank" href={data.href}>{data.title}</site-link>)

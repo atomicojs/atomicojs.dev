@@ -4,11 +4,10 @@ import imgReactCounter from "../../public/atomico-counter.svg";
 import imgAtomicoCounter from "../../public/react-counter.svg";
 import SectionTrust from "../components/section-trust.astro";
 import imgWhy from "../../public/social-why.png";
-
+import {SiteSection} from "@atomico/site";
 ---
-<script>import("@atomico/compare-content")</script>
 <LayoutDefault image={imgWhy} title="Why Atomico js webcomponents?" description="Atomico has a size as a module of 4 kB but being bundled JS its size is less than 2.5kB (GZIP), resulting in an incredibly light code">
-	<site-section class="hero">
+	<SiteSection class="hero">
 		<site-title size={8}>
 			<h1>Why Atomico webcomponents?</h1>
 		</site-title>
@@ -16,8 +15,8 @@ import imgWhy from "../../public/social-why.png";
 		<div>
 			<site-button href="/why-es" small color="accent">Leer en español</site-button>
 		</div>
-	</site-section>
-	<site-section>
+	</SiteSection>
+	<SiteSection>
 		<site-grid slot="content" align="top">
 			<site-big-title>ONE</site-big-title>
 			<site-title>
@@ -27,7 +26,7 @@ import imgWhy from "../../public/social-why.png";
 				<site-grid>
 					<site-text>
 						Atomico has a size as a module of 4 kB but being bundled JS its size is less than 2.5kB (GZIP), resulting in an incredibly light code.
-					</site-text>
+		 			</site-text>
 					<site-text>
 						We will show the benefits of Atomico through a comparison, 
 						we have used as a basis for this comparison the existing 
@@ -159,8 +158,8 @@ import imgWhy from "../../public/social-why.png";
 				</site-grid>
 			</site-grid>
 		</site-grid>
-	</site-section>
-	<site-section>
+	</SiteSection>
+	<SiteSection>
 		<site-grid slot="content" align="top">
 			<site-big-title>Two</site-big-title>
 			<site-title>
@@ -187,20 +186,20 @@ import imgWhy from "../../public/social-why.png";
 					<atomico-compare-content style={`padding: var(--size-4)`}>
 						<img
 							slot="content"
-							src={imgReactCounter}
+							src={imgReactCounter.src}
 							alt="React counter"
 						/>
 						<img
 							slot="content"
-							src={imgAtomicoCounter}
+							src={imgAtomicoCounter.src}
 							alt="Atomico counter"
 						/>
 					</atomico-compare-content>
 				</site-card>
 			</site-grid>
 		</site-grid>
-	</site-section>
-	<site-section>
+	</SiteSection>
+	<SiteSection>
 		<site-grid slot="content" align="top">
 			<site-big-title>Three</site-big-title>
 			<site-title>
@@ -222,7 +221,7 @@ import imgWhy from "../../public/social-why.png";
 				</site-grid>
 			</site-grid>
 		</site-grid>
-	</site-section>	
+	</SiteSection>	
 	<SectionTrust>
 		<h2 slot="title">They trust the use of Atomico JS</h2>	
 		<div slot="content">

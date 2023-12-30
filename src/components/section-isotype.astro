@@ -1,13 +1,12 @@
 ---
+import {SiteIsotype, SiteRow, SiteText} from "@atomico/site";
 import imgLogoText from "../../public/logo-text.svg";
 ---
-<site-isotype>
-    <site-grid gap={3} centered>
-        <img src={imgLogoText} alt="" />
-        <site-text elegant color="accent">WEBCOMPONENTS</site-text>
-        <site-text textCenter>
+    <!-- <SiteRow gap={3} centered> -->
+        <img src={imgLogoText.src} alt="" />
+        <!-- <SiteText elegant color="accent">WEBCOMPONENTS</SiteText> -->
+        <SiteText textCenter client:load>
             Create interfaces with code
             <br /> simple, fast and light
-        </site-text>
-    </site-grid>
-</site-isotype>
+        </SiteText>
+    <!-- </SiteRow> -->

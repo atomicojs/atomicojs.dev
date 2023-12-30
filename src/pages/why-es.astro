@@ -6,7 +6,6 @@ import SectionTrust from "../components/section-trust.astro";
 import imgWhy from "../../public/social-why.png";
 
 ---
-<script>import("@atomico/compare-content")</script>
 <LayoutDefault image={imgWhy} title="¿Por qué Atomico js webcomponents?" description="Atomico posee un tamaño como modulo de 4kB pero al crear el js como bundle su tamaño es inferior a 2.5kB (GZIP), Esto hace que Atomico sea una librería de increíblemente ligera.">
 	<site-section class="hero">
 		<site-title size={8}>
@@ -190,12 +189,12 @@ import imgWhy from "../../public/social-why.png";
 					<atomico-compare-content style={`padding: var(--size-4)`}>
 						<img
 							slot="content"
-							src={imgReactCounter}
+							src={imgReactCounter.src}
 							alt="React counter"
 						/>
 						<img
 							slot="content"
-							src={imgAtomicoCounter}
+							src={imgAtomicoCounter.src}
 							alt="Atomico counter"
 						/>
 					</atomico-compare-content>

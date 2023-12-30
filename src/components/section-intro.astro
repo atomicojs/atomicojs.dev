@@ -1,75 +1,76 @@
 ---
+import { SiteCard, SiteCount, SiteGrid, SiteSection, SiteText, SiteTitle } from "@atomico/site";
+import iconFunction from "../../public/icon-function.svg";
+import iconNotThis from "../../public/icon-not-this.svg";
+import iconShadow from "../../public/icon-shadow.svg";
+import iconWatch from "../../public/icon-watch.svg";
 import imgStep1 from "../../public/step-1.svg";
 import imgStep2 from "../../public/step-2.svg";
 import imgStep3 from "../../public/step-3.svg";
 import imgStep4 from "../../public/step-4.svg";
-import iconWatch from "../../public/icon-watch.svg";
-import iconShadow from "../../public/icon-shadow.svg";
-import iconFunction from "../../public/icon-function.svg";
-import iconNotThis from "../../public/icon-not-this.svg";
 ---
-<site-section>
-    <site-grid  gap={1}>
-        <site-text style="--font-spacing:var(--size-2)" elegant>WITH 3KB OF ATOMICO SIZE IT IS</site-text>
-        <site-title>
-            <h1>Simple, fast and light</h1>
-        </site-title>
-    </site-grid>
-    <site-text>
+<SiteSection>
+    <SiteGrid  gap={1} slot="left">
+        <SiteText style="--font-spacing:var(--size-2)" elegant>WITH 3KB OF ATOMICO SIZE IT IS</SiteText>
+        <SiteTitle>
+            <h2>Simple, fast and light</h2>
+        </SiteTitle>
+    </SiteGrid>
+    <SiteText slot="left">
         Atomico is a microlibrary of modern syntax created by <strong>UpperCod</strong> that simplifies component creation by replacing the use of classes with <strong>functions to manage everything</strong>.
         <br/>
-        Inside Atomico <img width="40px" src={iconNotThis} alt="Not this"> is an antipattern
-    </site-text>
-    <div class="icon-row">
-        <img width="40px" height="40px" loading="lazy" src={iconFunction} alt="Functions and Hooks to compose your webcomponent" />
-        <site-text>
+        Inside Atomico <img width="40px" src={iconNotThis.src} alt="Not this"> is an antipattern
+    </SiteText>
+    <div class="icon-row" slot="left">
+        <img width="40px" height="40px" loading="lazy" src={iconFunction.src} alt="Functions and Hooks to compose your webcomponent" />
+        <SiteText>
             Functions and Hooks to compose your webcomponent
-        </site-text>
+        </SiteText>
     </div>
-    <div class="icon-row">
-        <img width="40px" height="40px" loading="lazy" src={iconShadow} alt="ShadowDom" />
-        <site-text>
+    <div class="icon-row" slot="left">
+        <img width="40px" height="40px" loading="lazy" src={iconShadow.src} alt="ShadowDom" />
+        <SiteText>
             Atomico does not define a shadowDOM by default.
-        </site-text>
+        </SiteText>
     </div>
-    <div class="icon-row">
-        <img width="40px" height="40px" loading="lazy" src={iconWatch} alt="Reactive" />
-        <site-text>
+    <div class="icon-row" slot="left">
+        <img width="40px" height="40px" loading="lazy" src={iconWatch.src} alt="Reactive" />
+        <SiteText>
             Reactive properties and attributes with support for more than 500 types.
-        </site-text>
+        </SiteText>
     </div>
     <div slot="right" class="steps">
         <div class="step">
-            <site-count color="#FF0099" value={1}>
-                <site-text elegant color="title" size={3}>IMPORT</site-text>
-            </site-count>
-            <site-card padding overflow>
-                <img class="step-img" loading="lazy" src={imgStep1} alt="import {c} from 'atomico';" />
-            </site-card>
+            <SiteCount color="#FF0099" value={1}>
+                <SiteText elegant color="title" size={3}>IMPORT</SiteText>
+            </SiteCount>
+            <SiteCard  padding overflow >
+                <img class="step-img" loading="lazy" src={imgStep1.src} alt="import {c} from 'atomico';" />
+            </SiteCard>
         </div>
         <div class="step">
-            <site-count color="#FFE600" value={2}>
-                <site-text elegant color="title" size={3}>WEBCOMPONENT</site-text>
-            </site-count>
-            <site-card padding overflow>
-                <img class="step-img" loading="lazy" src={imgStep2} alt="Webcomponent" />
-            </site-card>
+            <SiteCount color="#FFE600" value={2}>
+                <SiteText elegant color="title" size={3}>WEBCOMPONENT</SiteText>
+            </SiteCount>
+            <SiteCard  padding overflow>
+                <img class="step-img" loading="lazy" src={imgStep2.src} alt="Webcomponent" />
+            </SiteCard>
         </div>
         <div class="step">
-            <site-count color="#00FF90" value={3}>
-                <site-text elegant color="title" size={3}>STYLES</site-text>
-            </site-count>
-            <site-card padding overflow>
-                <img class="step-img" loading="lazy" src={imgStep3} alt="Properties and attributes" />
-            </site-card>
+            <SiteCount color="#00FF90" value={3}>
+                <SiteText elegant color="title" size={3}>STYLES</SiteText>
+            </SiteCount>
+            <SiteCard  padding overflow>
+                <img class="step-img" loading="lazy" src={imgStep3.src} alt="Properties and attributes" />
+            </SiteCard>
         </div>
         <div class="step">
-            <site-count color="#0088FF" value={4}>
-                <site-text elegant color="title" size={3}>DECLARATIONS</site-text>
-            </site-count>
-            <site-card padding overflow>
-                <img class="step-img" loading="lazy" src={imgStep4} alt="customElements.define" />
-            </site-card>
+            <SiteCount color="#0088FF" value={4}>
+                <SiteText elegant color="title" size={3}>DECLARATIONS</SiteText>
+            </SiteCount>
+            <SiteCard  padding overflow>
+                <img class="step-img" loading="lazy" src={imgStep4.src} alt="customElements.define" />
+            </SiteCard>
         </div>
     </div>
-</site-section>
+</SiteSection>

@@ -3,22 +3,24 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev --experimental-integrations",
-    "start": "astro dev --experimental-integrations",
-    "build": "astro build --experimental-integrations",
-    "preview": "astro preview --experimental-integrations"
+    "dev": "astro dev ",
+    "start": "astro dev ",
+    "build": "astro build ",
+    "preview": "astro preview "
   },
   "devDependencies": {
-    "@atomico/astro": "^0.8.0",
     "@atomico/postcss-tokens": "^2.0.3",
     "@atomico/tsconfig": "^1.0.0",
     "@atomico/vite": "^2.11.2",
     "@fontsource/poppins": "^4.5.8",
-    "astro": "^3.1.2"
+    "astro": "^4.0.8",
+    "vite": "^5.0.7"
   },
   "dependencies": {
+    "@atomico/astro": "^0.9.0",
     "@atomico/compare-content": "^1.0.5",
-    "@atomico/site": "^0.7.1",
-    "atomico": "^1.74.0"
+    "@atomico/hooks": "^4.0.0-beta.4",
+    "@atomico/site": "^0.8.0",
+    "atomico": "^1.75.1"
   }
 }

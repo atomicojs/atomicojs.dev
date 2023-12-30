@@ -1,39 +1,40 @@
 ---
-import * as data from "../data";
+import { SiteAuthor, SiteGrid, SiteSection, SiteText, SiteTitle } from "@atomico/site";
 import imgAuthor from "../../public/author.jpg";
-import iconDonation from "../../public/icon-donation.svg";
 import iconCode from "../../public/icon-code.svg";
+import iconDonation from "../../public/icon-donation.svg";
 import iconShare from "../../public/icon-share.svg";
+import * as data from "../data";
 ---
-<site-section>
-    <site-author>
-        <img class="image-author" width="420" height="420" loading="lazy" src={imgAuthor} alt="Author of Atomico JS"/>
-    </site-author>
-    <site-grid slot="right" gap={1}>
-        <site-text elegant>AUTHOR'S MESSAGE</site-text>
-        <site-title>
+<SiteSection>
+    <SiteAuthor  slot="left">
+        <img class="image-author" width="420" height="420" loading="lazy" src={imgAuthor.src} alt="Author of Atomico JS"/>
+    </SiteAuthor>
+    <SiteGrid slot="right" gap={1}>
+        <SiteText elegant>AUTHOR'S MESSAGE</SiteText>
+        <SiteTitle>
             <h1>Join Atomico JS</h1>
-        </site-title>
-    </site-grid>
-    <site-text slot="right">
+        </SiteTitle>
+    </SiteGrid>
+    <SiteText slot="right">
         Atomico is an open source project developed by
         <a target="_blank" href={data.author.href}> UpperCod</a>, we invite you to contribute to the
         improvement of Atomico in:
-    </site-text>
+    </SiteText>
     <div class="icon-row" slot="right">
-        <img width="40" height="40" loading="lazy" src={iconShare} alt="Icon share" />
-        <site-text slot="right">Using and sharing Atomico</site-text>
+        <img width="40" height="40" loading="lazy" src={iconShare.src} alt="Icon share" />
+        <SiteText slot="right">Using and sharing Atomico</SiteText>
     </div>
     <div class="icon-row" slot="right">
-        <img width="40" height="40" loading="lazy" src={iconCode} alt="Icon code" />
-        <site-text slot="right">
+        <img width="40" height="40" loading="lazy" src={iconCode.src} alt="Icon code" />
+        <SiteText slot="right">
             Improving the source code, sharing bugs and new features
-        </site-text>
+        </SiteText>
     </div>
     <div class="icon-row" slot="right">
-        <img width="40" height="40" loading="lazy" src={iconDonation} alt="Icon donation" />
-        <site-text slot="right">
+        <img width="40" height="40" loading="lazy" src={iconDonation.src} alt="Icon donation" />
+        <SiteText slot="right">
             <a target="_blank" href={data.socials.koFi}>Small donations</a>
-        </site-text>
+        </SiteText>
     </div>
-</site-section>
+</SiteSection>

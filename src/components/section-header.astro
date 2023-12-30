@@ -1,17 +1,18 @@
 ---
-import { menuHeader, menuModal } from "../data";
+import { SiteHeader, SiteMenu, SiteEye } from "@atomico/site";
 import imgLogo from "../../public/logo.svg";
+import { menuHeader, menuModal } from "../data";
 ---
 
-<site-header >
+<SiteHeader >
     <a href="/"  slot="logo">
-        <img src={imgLogo} loading="lazy" width="160" height="35" alt="Logo atomicojs"/>
+        <img src={imgLogo.src} loading="lazy" width="160" height="35" alt="Logo atomicojs"/>
     </a>
     {
         menuHeader.map((data)=><site-link href={data.href} slot="link" target="_blank">{data.title}</site-link>)
     }
-    <site-menu slot="action">
-        <site-eye class="eye"></site-eye>
+    <SiteMenu slot="action">
+        <SiteEye class="eye"></SiteEye>
         <div class="menu">
             <div class="menu-group">
                 {menuModal.map((data)=><div>
@@ -22,5 +23,5 @@ import imgLogo from "../../public/logo.svg";
                 </div>)}
             </div>
         </div>
-    </site-menu>
-</site-header>
+    </SiteMenu>
+</SiteHeader>

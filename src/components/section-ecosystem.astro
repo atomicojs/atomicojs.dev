@@ -1,95 +1,115 @@
 ---
+import { SiteCard, SiteSection, SiteLink, SiteText, SiteTitle, SiteCategories } from "@atomico/site";
 import imgAtom from "../../public/atom.svg";
 ---
-<site-section>
-    <site-title>
+<SiteSection >
+    <SiteTitle  slot="left">
         <h1>The Atomico Ecosystem</h1>
-    </site-title>
-    <site-text>
+    </SiteTitle>
+    <SiteText  slot="left">
         Atomico has a modular development ecosystem that involves packaging, <strong>state management</strong>, <strong>router</strong>, <strong>SSR</strong>, <strong>SSG</strong>, and other <strong>Frontend solutions</strong>.
-    </site-text>
-    <img slot="right" src={imgAtom} />
-    <site-grid slot="content" columns="1, 2 768px, 3 980px">
-        <site-card padding overflow dotColor="var(--site--color-build)">
-            <site-text color="subtitle">
+    </SiteText>
+    <img slot="right" src={imgAtom.src} />
+    <SiteCategories >
+        <SiteLink   slot="category" data-category="*" dot="#FFE600">
+            All
+        </SiteLink>
+        <SiteLink
+            slot="category"
+            data-category="category-1"
+            dot="#0088FF"
+            
+        >
+            Category 1
+        </SiteLink>
+        <SiteLink
+            slot="category"
+            data-category="category-2"
+            dot="#00FF90"
+            
+        >
+            Category 2
+        </SiteLink>
+        <SiteCard   data-category="category-1" padding overflow dotColor="var(--site--color-build)">
+            <SiteText color="subtitle">
                 <h4>@atomico/exports</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     Automatically generate the exports, types and optimizing the code to distribute with your <strong>package.json</strong>
                 </small>
-            </site-text>
-        </site-card>
-        <site-card padding overflow dotColor="var(--site--color-framework)">
-            <site-text color="subtitle">
+            </SiteText>
+        </SiteCard>
+        <SiteCard  data-category="category-1" padding overflow dotColor="var(--site--color-framework)">
+            <SiteText color="subtitle">
                 <h4>@atomico/router</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     A router like asynchronous webcomponents really easy to use in SPA applications
                 </small>
-            </site-text>
-        </site-card>
-        <site-card padding overflow dotColor="var(--site--color-framework)">
-            <site-text color="subtitle">
+            </SiteText>
+        </SiteCard>
+        <SiteCard  data-category="category-1" padding overflow dotColor="var(--site--color-framework)">
+            <SiteText color="subtitle">
                 <h4>@atomico/store</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     Modern state manager, asynchronous and predictable thanks to the use of generators.
                 </small>
-            </site-text>
-        </site-card>
-        <site-card padding overflow dotColor="var(--site--color-library)">
-            <site-text color="subtitle">
+            </SiteText>
+        </SiteCard>
+        <SiteCard  data-category="category-2" padding overflow dotColor="var(--site--color-library)">
+            <SiteText color="subtitle">
                 <h4>@atomico/hooks</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     Over 50 highly useful hooks for interface development
                 </small>
-            </site-text>
-        </site-card>
-        <site-card padding overflow dotColor="var(--site--color-library)">
-            <site-text color="subtitle">
+            </SiteText>
+        </SiteCard>
+        <SiteCard  data-category="category-2" padding overflow dotColor="var(--site--color-library)">
+            <SiteText color="subtitle">
                 <h4>@atomico/react</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     Super powerful wrapper for <strong>React and Preact (Works with SSR 
                         🤯)</strong>
                 </small>
-            </site-text>
-        </site-card>
-        <site-card padding overflow dotColor="var(--site--color-build)">
-            <site-text color="subtitle">
+            </SiteText>
+        </SiteCard>
+        <SiteCard  padding overflow dotColor="var(--site--color-build)">
+            <SiteText color="subtitle">
                 <h4>@atomico/astro</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     Create <strong>SSG</strong> and <strong>SSR</strong> sites with Atomico + <a href="https://astro.build/" target="_blank">Astro build</a> as a tool (like this site)
                 </small>
-            </site-text>
-        </site-card>
-        <site-card padding overflow dotColor="var(--site--color-build)">
-            <site-text color="subtitle">
+            </SiteText>
+        </SiteCard>
+        <SiteCard  padding overflow dotColor="var(--site--color-build)">
+            <SiteText color="subtitle">
                 <h4>@atomico/vite</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     Improves the Atomico development experience + <a href="http://vitejs.dev/" target="_blank">Vite</a> + <a href="https://vitest.dev/" target= "_blank">Vitest</a>
                 </small>
-            </site-text>
-        </site-card>
-        <site-card padding overflow dotColor="var(--site--color-library)">
-            <site-text color="subtitle">
+            </SiteText>
+        </SiteCard>
+        <SiteCard  padding overflow dotColor="var(--site--color-library)">
+            <SiteText color="subtitle">
                 <h4>Formilk</h4>
-            </site-text>
-            <site-text>
+            </SiteText>
+            <SiteText>
                 <small>
                     Component system created with Atomico, friendly with Forms and with support for React and Preact
                 </small>
-            </site-text>
-        </site-card>
-    </site-grid>
-</site-section>
+            </SiteText>
+        </SiteCard>
+    </SiteCategories>
+</SiteSection>
