@@ -19,37 +19,3 @@ body {
 img {
   max-width: 100%;
 }
-
-site-text a {
-  text-decoration-style: wavy;
-  color: var(--color-accent);
-  font-weight: 500;
-}
-
-.image-center img {
-  margin: auto;
-  object-fit: contain;
-}
-
-.image-author {
-  object-fit: cover;
-}
-
-site-header:not(:defined) {
-  visibility: hidden;
-}
-
-.hero {
-  padding-top: 240px;
-  padding-bottom: 0px;
-}
-
-.hero + site-section {
-  padding-top: 0px;
-}
-
-@media (max-width: 420px) {
-  .image-author {
-    height: 320px;
-  }
-}

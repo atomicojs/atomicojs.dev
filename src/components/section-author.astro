@@ -1,40 +1,49 @@
 ---
-import { SiteAuthor, SiteGrid, SiteSection, SiteText, SiteTitle } from "@atomico/site";
+import {
+  SiteAuthor,
+  SiteRow,
+  SiteSection,
+  SiteText,
+  SiteTitle,
+} from "@atomico/site";
 import imgAuthor from "../../public/author.jpg";
 import iconCode from "../../public/icon-code.svg";
 import iconDonation from "../../public/icon-donation.svg";
 import iconShare from "../../public/icon-share.svg";
 import * as data from "../data";
 ---
+
 <SiteSection>
-    <SiteAuthor  slot="left">
-        <img class="image-author" width="420" height="420" loading="lazy" src={imgAuthor.src} alt="Author of Atomico JS"/>
-    </SiteAuthor>
-    <SiteGrid slot="right" gap={1}>
-        <SiteText elegant>AUTHOR'S MESSAGE</SiteText>
-        <SiteTitle>
-            <h1>Join Atomico JS</h1>
-        </SiteTitle>
-    </SiteGrid>
-    <SiteText slot="right">
+  <SiteRow colsMd="55% auto" gap={7}>
+    <SiteRow>
+      <SiteAuthor>
+        <img src={imgAuthor.src} />
+      </SiteAuthor>
+    </SiteRow>
+    <SiteRow>
+      <SiteTitle>
+        <h1>Join Atomico JS</h1>
+      </SiteTitle>
+      <SiteText elegant>AUTHOR'S MESSAGE</SiteText>
+      <SiteText>
         Atomico is an open source project developed by
-        <a target="_blank" href={data.author.href}> UpperCod</a>, we invite you to contribute to the
-        improvement of Atomico in:
-    </SiteText>
-    <div class="icon-row" slot="right">
-        <img width="40" height="40" loading="lazy" src={iconShare.src} alt="Icon share" />
-        <SiteText slot="right">Using and sharing Atomico</SiteText>
-    </div>
-    <div class="icon-row" slot="right">
-        <img width="40" height="40" loading="lazy" src={iconCode.src} alt="Icon code" />
-        <SiteText slot="right">
-            Improving the source code, sharing bugs and new features
+        <a href=""> UpperCod</a>, we invite you to contribute to the improvement
+        of Atomico in:
+      </SiteText>
+      <SiteRow cols="auto 1fr">
+        <img src={iconShare.src} alt="" />
+        <SiteText>Using and sharing Atomico</SiteText>
+      </SiteRow>
+      <SiteRow cols="auto 1fr">
+        <img src={iconCode.src} alt="" />
+        <SiteText>
+          Improving the source code, sharing bugs and new features
         </SiteText>
-    </div>
-    <div class="icon-row" slot="right">
-        <img width="40" height="40" loading="lazy" src={iconDonation.src} alt="Icon donation" />
-        <SiteText slot="right">
-            <a target="_blank" href={data.socials.koFi}>Small donations</a>
-        </SiteText>
-    </div>
+      </SiteRow>
+      <SiteRow cols="auto 1fr">
+        <img src={iconDonation.src} alt="" />
+        <SiteText>Small donations</SiteText>
+      </SiteRow>
+    </SiteRow>
+  </SiteRow>
 </SiteSection>

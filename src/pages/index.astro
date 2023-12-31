@@ -1,5 +1,5 @@
 ---
-import LayoutDefault from "../layouts/default.astro"
+import LayoutDefault from "../layouts/default.astro";
 import SectionIsotype from "../components/section-isotype.astro";
 import SectionIntro from "../components/section-intro.astro";
 import SectionEcosystem from "../components/section-ecosystem.astro";
@@ -8,20 +8,22 @@ import SectionAuthor from "../components/section-author.astro";
 ---
 
 <LayoutDefault>
-	<SectionIsotype></SectionIsotype>
-	 <SectionIntro></SectionIntro>
-	 <!--
-	<SectionTrust>
-		<h1 slot="title">They trust the use of Atomico JS</h1>	
-		<div slot="content">
-			<site-text>
-				We thank all the developers and companies that make it possible to use Atomico in their projects.
-				<br/>
-				<br/>
-				If you already use Atomico we want to know your experience, doubts or ideas.
-			</site-text>
-		</div>
-	</SectionTrust>	
-	<SectionEcosystem></SectionEcosystem>
-	<SectionAuthor></SectionAuthor> -->
+  <SectionIsotype />
+  <SectionIntro />
+  <SectionTrust>
+    <h2 slot="title">They trust the use of Atomico JS</h2>
+    <div slot="content">
+      <site-text>
+        We thank all the developers and companies that make it possible to use
+        Atomico in their projects.
+        <br />
+        <br />
+         If you already use Atomico we want to know your experience, doubts or
+        ideas.
+      </site-text>
+    </div>
+  </SectionTrust>
+
+  <SectionEcosystem />
+  <SectionAuthor />
 </LayoutDefault>

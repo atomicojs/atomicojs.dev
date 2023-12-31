@@ -1,115 +1,175 @@
 ---
-import { SiteCard, SiteSection, SiteLink, SiteText, SiteTitle, SiteCategories } from "@atomico/site";
-import imgAtom from "../../public/atom.svg";
+import {
+  SiteAvatar,
+  SiteCard,
+  SiteCategories,
+  SiteLink,
+  SiteSection,
+  SiteSocials,
+  SiteText,
+  SiteTitle,
+  SiteRow,
+  SitePlanet,
+} from "@atomico/site";
 ---
-<SiteSection >
-    <SiteTitle  slot="left">
-        <h1>The Atomico Ecosystem</h1>
-    </SiteTitle>
-    <SiteText  slot="left">
-        Atomico has a modular development ecosystem that involves packaging, <strong>state management</strong>, <strong>router</strong>, <strong>SSR</strong>, <strong>SSG</strong>, and other <strong>Frontend solutions</strong>.
-    </SiteText>
-    <img slot="right" src={imgAtom.src} />
-    <SiteCategories >
-        <SiteLink   slot="category" data-category="*" dot="#FFE600">
-            All
-        </SiteLink>
-        <SiteLink
-            slot="category"
-            data-category="category-1"
-            dot="#0088FF"
-            
-        >
-            Category 1
-        </SiteLink>
-        <SiteLink
-            slot="category"
-            data-category="category-2"
-            dot="#00FF90"
-            
-        >
-            Category 2
-        </SiteLink>
-        <SiteCard   data-category="category-1" padding overflow dotColor="var(--site--color-build)">
-            <SiteText color="subtitle">
-                <h4>@atomico/exports</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    Automatically generate the exports, types and optimizing the code to distribute with your <strong>package.json</strong>
-                </small>
-            </SiteText>
-        </SiteCard>
-        <SiteCard  data-category="category-1" padding overflow dotColor="var(--site--color-framework)">
-            <SiteText color="subtitle">
-                <h4>@atomico/router</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    A router like asynchronous webcomponents really easy to use in SPA applications
-                </small>
-            </SiteText>
-        </SiteCard>
-        <SiteCard  data-category="category-1" padding overflow dotColor="var(--site--color-framework)">
-            <SiteText color="subtitle">
-                <h4>@atomico/store</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    Modern state manager, asynchronous and predictable thanks to the use of generators.
-                </small>
-            </SiteText>
-        </SiteCard>
-        <SiteCard  data-category="category-2" padding overflow dotColor="var(--site--color-library)">
-            <SiteText color="subtitle">
-                <h4>@atomico/hooks</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    Over 50 highly useful hooks for interface development
-                </small>
-            </SiteText>
-        </SiteCard>
-        <SiteCard  data-category="category-2" padding overflow dotColor="var(--site--color-library)">
-            <SiteText color="subtitle">
-                <h4>@atomico/react</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    Super powerful wrapper for <strong>React and Preact (Works with SSR 
-                        🤯)</strong>
-                </small>
-            </SiteText>
-        </SiteCard>
-        <SiteCard  padding overflow dotColor="var(--site--color-build)">
-            <SiteText color="subtitle">
-                <h4>@atomico/astro</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    Create <strong>SSG</strong> and <strong>SSR</strong> sites with Atomico + <a href="https://astro.build/" target="_blank">Astro build</a> as a tool (like this site)
-                </small>
-            </SiteText>
-        </SiteCard>
-        <SiteCard  padding overflow dotColor="var(--site--color-build)">
-            <SiteText color="subtitle">
-                <h4>@atomico/vite</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    Improves the Atomico development experience + <a href="http://vitejs.dev/" target="_blank">Vite</a> + <a href="https://vitest.dev/" target= "_blank">Vitest</a>
-                </small>
-            </SiteText>
-        </SiteCard>
-        <SiteCard  padding overflow dotColor="var(--site--color-library)">
-            <SiteText color="subtitle">
-                <h4>Formilk</h4>
-            </SiteText>
-            <SiteText>
-                <small>
-                    Component system created with Atomico, friendly with Forms and with support for React and Preact
-                </small>
-            </SiteText>
-        </SiteCard>
+
+<SiteSection>
+  <SiteRow gap={7}>
+    <SiteRow colsMd="1fr 1fr" gap={7}>
+      <SiteRow>
+        <SiteTitle>
+          <h2>The Atomico Ecosystem</h2>
+        </SiteTitle>
+        <SiteText>
+          Atomico has a modular development ecosystem that involves packaging, <strong
+            >state management</strong
+          >, <strong>router</strong>, <strong>SSR</strong>, <strong>SSG</strong
+          >, and other <strong>Frontend solutions</strong>.
+        </SiteText>
+      </SiteRow>
+      <SitePlanet style="height:320px;width:320px; margin: auto" />
+    </SiteRow>
+    <SiteCategories category="*" columns="1, 2 768px, 3 980px">
+      <SiteLink slot="category" data-category="*" dot="#FFE600">All</SiteLink>
+      <SiteLink slot="category" data-category="category-1" dot="#0088FF">
+        Category 1
+      </SiteLink>
+      <SiteLink slot="category" data-category="category-2" dot="#00FF90">
+        Category 2
+      </SiteLink>
+      <SiteCard padding extended overflow dotColor="#FFE600">
+        <img
+          slot="media"
+          src="https://cdn.dribbble.com/userupload/10211211/file/original-bc768aed301f6f0f9a6d8673dadd4da8.png?resize=1024x768"
+        />
+        <SiteText color="subtitle">
+          <h4>@atomico/exports</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+        <SiteAvatar slot="footer" small detail="Matias">
+          <img src="https://avatars.githubusercontent.com/u/9159849?v=4" />
+        </SiteAvatar>
+        <SiteSocials slot="footer" twitter="uppercod" github="uppercod" />
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#FFE600">
+        <iframe
+          slot="media"
+          src="//player.vimeo.com/video/135653517?title=0&portrait=0&byline=0&autoplay=1&loop=1&transparent=1&muted=1"
+          width="100%"></iframe>
+        <SiteText color="subtitle">
+          <h4>@atomico/exports</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+        <SiteAvatar slot="footer" small detail="Matias">
+          <img src="https://avatars.githubusercontent.com/u/9159849?v=4" />
+        </SiteAvatar>
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#FFE600">
+        <img
+          slot="media"
+          src="https://cdn.dribbble.com/userupload/10211211/file/original-bc768aed301f6f0f9a6d8673dadd4da8.png?resize=1024x768"
+        />
+        <SiteText color="subtitle">
+          <h5>@atomico/exports</h5>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+        <SiteAvatar slot="footer" small detail="Matias">
+          <img src="https://avatars.githubusercontent.com/u/9159849?v=4" />
+        </SiteAvatar>
+      </SiteCard>
+      <SiteCard padding overflow dotColor="#0088FF" data-category="category-2">
+        <SiteText color="subtitle">
+          <h4>@atomico/router</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+      </SiteCard>
+      <SiteCard padding overflow dotColor="#00FF90" data-category="category-3">
+        <SiteText color="subtitle">
+          <h4>@atomico/store</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#00FF90">
+        <SiteText color="subtitle">
+          <h4>@atomico/hooks</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#00FF90">
+        <SiteText color="subtitle">
+          <h4>@atomico/react</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#00FF90">
+        <SiteText color="subtitle">
+          <h4>@atomico/router</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#00FF90">
+        <SiteText color="subtitle">
+          <h4>@atomico/components</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#00FF90">
+        <SiteText color="subtitle">
+          <h4>@atomico/ui</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </small>
+        </SiteText>
+      </SiteCard>
+      <SiteCard padding extended overflow dotColor="#00FF90">
+        <SiteText color="subtitle">
+          <h4>@atomico/ui</h4>
+        </SiteText>
+        <SiteText>
+          <small>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            officiis, consequuntur laudantium nisi minima totam.
+          </small>
+        </SiteText>
+      </SiteCard>
     </SiteCategories>
+  </SiteRow>
 </SiteSection>
