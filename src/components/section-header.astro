@@ -1,27 +1,53 @@
 ---
-import { SiteHeader, SiteMenu, SiteEye } from "@atomico/site";
 import imgLogo from "../../public/logo.svg";
 import { menuHeader, menuModal } from "../data";
+import {
+  SiteEye,
+  SiteHeader,
+  SiteLink,
+  SiteMenu,
+  SiteSocials,
+  SiteText,
+  SiteRow,
+  SiteSection,
+} from "@atomico/site";
 ---
 
-<SiteHeader >
-    <a href="/"  slot="logo">
-        <img src={imgLogo.src} loading="lazy" width="160" height="35" alt="Logo atomicojs"/>
-    </a>
-    {
-        menuHeader.map((data)=><site-link href={data.href} slot="link" target="_blank">{data.title}</site-link>)
-    }
-    <SiteMenu slot="action">
-        <SiteEye class="eye"></SiteEye>
-        <div class="menu">
-            <div class="menu-group">
-                {menuModal.map((data)=><div>
-                    <site-text size={3} color="accent" elegant>{data.title}</site-text>
-                    <div class="menu-items">
-                        {data.items.map((data)=><site-link href={data.href} slot="link" target="_blank">{data.title}</site-link>)}
-                    </div>
-                </div>)}
-            </div>
-        </div>
-    </SiteMenu>
+<SiteHeader>
+  <img src={imgLogo.src} slot="logo" />
+  {
+    menuHeader.map((data) => (
+      <SiteLink href={data.href} slot="link" target="_blank">
+        {data.title}
+      </SiteLink>
+    ))
+  }
+  <SiteMenu slot="action">
+    <SiteEye class="eye" />
+    <SiteSection>
+      {
+        menuModal.map((data) => (
+          <SiteRow>
+            <SiteText elegant color="accent">
+              {data.title}
+            </SiteText>
+            <SiteRow flex>
+              {data.items.map((data) => (
+                <SiteLink href={data.href} target="_blank">
+                  {data.title}
+                </SiteLink>
+              ))}
+            </SiteRow>
+          </SiteRow>
+        ))
+      }
+    </SiteSection>
+  </SiteMenu>
+  <SiteSocials
+    twitter="atomicojs"
+    github="atomicojs"
+    discord="atomicojs"
+    youtube="atomicojs"
+    slot="action"
+  />
 </SiteHeader>
