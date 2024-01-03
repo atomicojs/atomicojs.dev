@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="0.038" x2="0.087" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset="1" stop-color="tomato"/>
+    </linearGradient>
+  </defs>
+  <g id="share" transform="translate(-224 -255)">
+    <path id="Path_457" data-name="Path 457" d="M-1047-5520h-20a10.011,10.011,0,0,1-10-10v-20a10.012,10.012,0,0,1,10-10h20a10.011,10.011,0,0,1,10,10v20A10.011,10.011,0,0,1-1047-5520Zm-20-38a8.01,8.01,0,0,0-8,8v20a8.01,8.01,0,0,0,8,8h20a8.009,8.009,0,0,0,8-8v-20a8.009,8.009,0,0,0-8-8Z" transform="translate(1301 5815)" fill="url(#linear-gradient)"/>
+    <g id="Group_274" data-name="Group 274" transform="translate(16.709 40.159) rotate(15.009)">
+      <g id="Group_273" data-name="Group 273" transform="translate(-38.026 251.853) rotate(-45)">
+        <rect id="Rectangle_276" data-name="Rectangle 276" width="17" height="2" rx="1" transform="translate(278.171 161)" fill="#fff" opacity="0.6"/>
+        <rect id="Rectangle_277" data-name="Rectangle 277" width="13" height="2" rx="1" transform="translate(279.385 162.871) rotate(60)" fill="#fff" opacity="0.6"/>
+      </g>
+      <circle id="Ellipse_55" data-name="Ellipse 55" cx="3.5" cy="3.5" r="3.5" transform="translate(269.909 166.985) rotate(-15.009)" fill="#fff"/>
+      <circle id="Ellipse_56" data-name="Ellipse 56" cx="3.5" cy="3.5" r="3.5" transform="translate(278.645 157.086) rotate(-15.009)" fill="#fff"/>
+      <circle id="Ellipse_57" data-name="Ellipse 57" cx="3.5" cy="3.5" r="3.5" transform="translate(281.25 170.675) rotate(-15.009)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

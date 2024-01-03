@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="0.038" x2="0.087" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset="1" stop-color="tomato"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.926" y1="0.24" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="growth" transform="translate(-224.001 -255)">
+    <path id="Path_457" data-name="Path 457" d="M-1047-5520h-20a10.011,10.011,0,0,1-10-10v-20a10.012,10.012,0,0,1,10-10h20a10.011,10.011,0,0,1,10,10v20A10.011,10.011,0,0,1-1047-5520Zm-20-38a8.01,8.01,0,0,0-8,8v20a8.01,8.01,0,0,0,8,8h20a8.009,8.009,0,0,0,8-8v-20a8.009,8.009,0,0,0-8-8Z" transform="translate(1301.001 5815)" fill="url(#linear-gradient)"/>
+    <g id="Group_285" data-name="Group 285" transform="translate(1.053 4.491)">
+      <path id="Path_487" data-name="Path 487" d="M0,1.528c-.006.06,6.393-3.439,12.349,0S23.991.821,23.991.821L11.642,13.17S.006,1.468,0,1.528Z" transform="translate(232.061 279.236) rotate(-45)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_486" data-name="Path 486" d="M0,1.528s6.393-3.439,12.349,0,12.349,0,12.349,0" transform="translate(232.061 279.236) rotate(-45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <g id="Group_286" data-name="Group 286" transform="translate(231.997 261.713)">
+        <path id="Path_488" data-name="Path 488" d="M2024.433,5825.209v20h20" transform="translate(-2024.048 -5825.914)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" stroke-dasharray="0 3"/>
+      </g>
+      <rect id="Rectangle_285" data-name="Rectangle 285" width="6" height="2" rx="1" transform="matrix(0.966, -0.259, 0.259, 0.966, 246.348, 262.261)" fill="#fff"/>
+      <rect id="Rectangle_286" data-name="Rectangle 286" width="6" height="2" rx="1" transform="matrix(0.259, 0.966, -0.966, 0.259, 252.144, 260.708)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

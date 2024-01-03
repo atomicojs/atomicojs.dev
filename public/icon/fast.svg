@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="0.038" x2="0.087" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset="1" stop-color="tomato"/>
+    </linearGradient>
+  </defs>
+  <g id="fast" transform="translate(-224 -255)">
+    <path id="Path_457" data-name="Path 457" d="M-1047-5520h-20a10.011,10.011,0,0,1-10-10v-20a10.012,10.012,0,0,1,10-10h20a10.011,10.011,0,0,1,10,10v20A10.011,10.011,0,0,1-1047-5520Zm-20-38a8.01,8.01,0,0,0-8,8v20a8.01,8.01,0,0,0,8,8h20a8.009,8.009,0,0,0,8-8v-20a8.009,8.009,0,0,0-8-8Z" transform="translate(1301 5815)" fill="url(#linear-gradient)"/>
+    <g id="Group_280" data-name="Group 280" transform="matrix(0.966, -0.259, 0.259, 0.966, 226.419, 263.283)">
+      <path id="Path_479" data-name="Path 479" d="M6.79,54.925a.862.862,0,1,0,0-1.724H3.362a.862.862,0,1,0,0,1.724Z" transform="translate(0 -37.037)" fill="#fff"/>
+      <path id="Path_480" data-name="Path 480" d="M10.011,37.4H6.562a.866.866,0,0,0-.862.862.853.853,0,0,0,.862.862h3.449a.862.862,0,1,0,0-1.724Z" transform="translate(-2.527 -24.56)" fill="#fff"/>
+      <path id="Path_481" data-name="Path 481" d="M10.011,69.1H6.562a.866.866,0,0,0-.862.862.853.853,0,0,0,.862.862h3.449a.862.862,0,1,0,0-1.725Z" transform="translate(-2.527 -49.593)" fill="#fff"/>
+      <path id="Path_482" data-name="Path 482" d="M41.232,9.434V8.025h.988a.866.866,0,0,0,.862-.862A.853.853,0,0,0,42.22,6.3H38.54a.866.866,0,0,0-.862.862.853.853,0,0,0,.862.862h.988V9.434a7.585,7.585,0,0,0-4.416,2.061.848.848,0,1,0,1.178,1.22,5.941,5.941,0,1,1,0,8.6.848.848,0,1,0-1.178,1.22,7.639,7.639,0,1,0,6.12-13.1Z" transform="translate(-25.546)" fill="#fff"/>
+      <path id="Path_483" data-name="Path 483" d="M57.862,37.4a.866.866,0,0,0-.862.862v3.323a.866.866,0,0,0,.862.862H60.7a.862.862,0,0,0,0-1.725H58.725V38.262A.866.866,0,0,0,57.862,37.4Z" transform="translate(-43.038 -24.56)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="0.038" x2="0.087" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset="1" stop-color="tomato"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="shadow" transform="translate(-224 -255)">
+    <path id="Path_457" data-name="Path 457" d="M-1047-5520h-20a10.011,10.011,0,0,1-10-10v-20a10.012,10.012,0,0,1,10-10h20a10.011,10.011,0,0,1,10,10v20A10.011,10.011,0,0,1-1047-5520Zm-20-38a8.01,8.01,0,0,0-8,8v20a8.01,8.01,0,0,0,8,8h20a8.009,8.009,0,0,0,8-8v-20a8.009,8.009,0,0,0-8-8Z" transform="translate(1301 5815)" fill="url(#linear-gradient)"/>
+    <g id="icon-shadow.76d22dcb" transform="translate(224 255)">
+      <g id="Group_271" data-name="Group 271" transform="translate(10 10)">
+        <path id="Path_464" data-name="Path 464" d="M-7571.43-836.774a7.767,7.767,0,0,1,.262-1.925l9.473,9.473a7.74,7.74,0,0,1-1.925.262Zm2.3,5.58-.069-.069a7.709,7.709,0,0,1-2.154-4.341l6.563,6.563a7.71,7.71,0,0,1-4.34-2.154Zm-1.766-8.328a7.678,7.678,0,0,1,.748-1.438l10.716,10.715a7.73,7.73,0,0,1-1.438.748Zm1.213-2.068.05-.062.981-.981.062-.051,10.88,10.88a7.712,7.712,0,0,1-1.093,1.093Zm1.722-1.557a7.734,7.734,0,0,1,1.438-.749l10.024,10.025a7.738,7.738,0,0,1-.749,1.438Zm2.261-1.019a7.759,7.759,0,0,1,1.926-.261l7.81,7.809a7.767,7.767,0,0,1-.262,1.925Zm3.1-.185a7.735,7.735,0,0,1,6.563,6.563Z" transform="translate(7576.041 848.964)" opacity="0.75" fill="url(#linear-gradient-2)"/>
+        <circle id="Ellipse_54" data-name="Ellipse 54" cx="7.605" cy="7.605" r="7.605" transform="translate(0 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

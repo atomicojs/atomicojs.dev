@@ -1,236 +1,269 @@
 ---
-import LayoutDefault from "../layouts/default.astro"
+import {
+  SiteBigTitle,
+  SiteCard,
+  SiteCount,
+  SiteGraphDiff,
+  SiteRow,
+  SiteSection,
+  SiteText,
+  SiteTitle,
+} from "@atomico/site";
 import imgReactCounter from "../../public/atomico-counter.svg";
 import imgAtomicoCounter from "../../public/react-counter.svg";
-import SectionTrust from "../components/section-trust.astro";
 import imgWhy from "../../public/social-why.png";
-import {SiteSection} from "@atomico/site";
+import imgVeryHappy from "../../public/icon/very-happy.svg";
+import LayoutDefault from "../layouts/default.astro";
+import SectionTrust from "../components/section-trust.astro";
 ---
-<LayoutDefault image={imgWhy} title="Why Atomico js webcomponents?" description="Atomico has a size as a module of 4 kB but being bundled JS its size is less than 2.5kB (GZIP), resulting in an incredibly light code">
-	<SiteSection class="hero">
-		<site-title size={8}>
-			<h1>Why Atomico webcomponents?</h1>
-		</site-title>
-		<site-text>We invite you to know 3 reasons why to use Atomico webcomponents</site-text>
-		<div>
-			<site-button href="/why-es" small color="accent">Leer en español</site-button>
-		</div>
-	</SiteSection>
-	<SiteSection>
-		<site-grid slot="content" align="top">
-			<site-big-title>ONE</site-big-title>
-			<site-title>
-				<h2>light size</h2>
-			</site-title>
-			<site-grid columns="1, 2 520px" align="top">
-				<site-grid>
-					<site-text>
-						Atomico has a size as a module of 4 kB but being bundled JS its size is less than 2.5kB (GZIP), resulting in an incredibly light code.
-		 			</site-text>
-					<site-text>
-						We will show the benefits of Atomico through a comparison, 
-						we have used as a basis for this comparison the existing 
-						counter webcomponents in
-						<a target="_blank" href="https://webcomponents.dev">webcomponents.dev</a>
-						of <strong>Atomico</strong>,
-						<strong>Lit</strong>, <strong>Preact</strong> and 
-						<strong>React</strong>  as a base.
-					</site-text>
-				</site-grid>
-				<site-grid gap={4}>
-					<site-text>
-						With this comparison we get to know:
-					</site-text>
-					<site-count value={1}>
-						<site-text>
-							JS Size (Library + Component) sent to browser
-						</site-text>
-					</site-count>
-					<site-count value={2}>
-						<site-text>
-							Load time of the first render of 1000 components in the browser.
-						</site-text>
-					</site-count>
-					<site-count value={3}>
-						<site-text>
-							Lines of code written to solve the webcomponent.
-						</site-text>
-					</site-count>
-				</site-grid>
-			</site-grid>
-			<site-grid>
-				<site-graph-diff
-					data={[
-						{
-							label: "Atomico",
-							items: [
-								{
-									label: "10.9kB",
-									value: 10.9,
-								},
 
-								{
-									label: "8.18ms",
-									value: 8.18,
-								},
-								{
-									label: "39 lines",
-									value: 39,
-								},
-							],
-						},
-						{
-							label: "Lit",
-							items: [
-								{
-									label: "19.8kB",
-									value: 19.8,
-								},
-
-								{
-									label: "7.86ms",
-									value: 7.86,
-								},
-								{
-									label: "56 lines",
-									value: 56,
-								},
-							],
-						},
-						{
-							label: "Preact",
-							items: [
-								{
-									label: "22kB",
-									value: 22,
-								},
-
-								{
-									label: "9ms",
-									value: 9,
-								},
-								{
-									label: "36 lines",
-									value: 36,
-								},
-							],
-						},
-						{
-							label: "React",
-							hide: false,
-							items: [
-								{
-									label: "101.9kB",
-									value: 101.9,
-								},
-								{
-									label: "70.9ms",
-									value: 70.9,
-								},
-								{
-									label: "40 lines",
-									value: 40,
-								},
-							],
-						},
-					]}
-				></site-graph-diff>
-				<site-grid  columns="1, 2 520px" >
-					<site-grid   align="top"  gap={4}>
-						According to the context of the comparison we can conclude:
-						<site-count value={1}>
-							<site-text>
-								<strong>Atomico is 8.6x faster than React</strong> on first render.
-							</site-text>
-						</site-count>
-						<site-count value={2}>
-							<site-text>
-								Atomico only needs 75% of the lines of code that Lit needs to solve the same goal.
-							</site-text>
-						</site-count>
-					</site-grid>
-					<site-text>
-						Atomico is light in size and in lines of code. Writing fewer lines of code will help you improve your productivity when developing and scaling your interface.
-						<br/>
-						<br/>
-						The results obtained are thanks to the tool <a target="_blank" href="https://github.com/Polymer/tachometer">Tachometer</a>, you can find the code of this comparison in <a target ="_blank" href="https://github.com/atomicojs/perf">atomicojs/perf</a>.
-					</site-text>
-				</site-grid>
-			</site-grid>
-		</site-grid>
-	</SiteSection>
-	<SiteSection>
-		<site-grid slot="content" align="top">
-			<site-big-title>Two</site-big-title>
-			<site-title>
-				<h2>Learning curve</h2>
-			</site-title>
-			<site-grid columns="1, 2 520px" align="top">
-				<site-grid>
-					<site-text>
-						Today the job market is dominated by React and this has caused 
-						the frontend route to be marked by React. 
-						Atomico has syntax inspired by React Hooks, 
-						reducing the friction of its adoption.
-						<br />
-						<br />
-						<site-text>
-							<strong>
-								If you know React you know Atomico at 90%
-							</strong>
-							, Most companies using Atomico thanks to its similarity to React.
-						</site-text>
-					</site-text>
-				</site-grid>
-				<site-card>
-					<atomico-compare-content style={`padding: var(--size-4)`}>
-						<img
-							slot="content"
-							src={imgReactCounter.src}
-							alt="React counter"
-						/>
-						<img
-							slot="content"
-							src={imgAtomicoCounter.src}
-							alt="Atomico counter"
-						/>
-					</atomico-compare-content>
-				</site-card>
-			</site-grid>
-		</site-grid>
-	</SiteSection>
-	<SiteSection>
-		<site-grid slot="content" align="top">
-			<site-big-title>Three</site-big-title>
-			<site-title>
-				<h2>Integration and Coverage</h2>
-			</site-title>
-			<site-grid columns="1, 2 520px" align="top">
-				<site-grid>
-					<site-text>
-						Atomico is easily integrated into any existing project, thanks to a series of tools that improve coverage at the package level and best practices.
-					</site-text>
-				</site-grid>
-				<site-grid gap={4}>
-					<site-text>
-						A component created with Atomico can be used in Html, Vue, Preact, React, Svelte, Solid or any other library.
-						<br/>
-						<br/>
-						In summary <strong>1 single code to support multiple libraries.</strong>
-					</site-text>
-				</site-grid>
-			</site-grid>
-		</site-grid>
-	</SiteSection>	
-	<SectionTrust>
-		<h2 slot="title">They trust the use of Atomico JS</h2>	
-		<div slot="content">
-			<site-text>
-				We thank all the developers and companies that make it possible to use Atomico in their projects.
-				<br/>
-				<br/>
-				If you already use Atomico we want to know your experience, doubts or ideas.
-			</site-text>
-		</div>
-	</SectionTrust>	
+<LayoutDefault
+  image={imgWhy}
+  title="Why Atomico js webcomponents?"
+  description="Atomico has a size as a module of 4 kB but being bundled JS its size is less than 2.5kB (GZIP), resulting in an incredibly light code"
+>
+  <SiteSection />
+  <SiteSection class="hero">
+    <SiteTitle size={8}>
+      <h1>Why Atomico webcomponents?</h1>
+    </SiteTitle>
+    <SiteText />
+     We invite you to know 3 reasons why to use Atomico webcomponents
+    <div>
+      <site-button href="/why-es" small color="accent"
+        >Leer en español</site-button
+      >
+    </div>
+  </SiteSection>
 </LayoutDefault>
+<SiteSection>
+  <SiteRow align="top">
+    <SiteBigTitle>ONE</SiteBigTitle>
+    <SiteTitle>
+      <h2>light size</h2>
+    </SiteTitle>
+    <SiteRow colsMd="1fr 1fr" align="top" gap={7}>
+      <SiteRow>
+        <SiteText>
+          Atomico has a size as a module of 4 kB but being bundled JS its size
+          is less than 2.5kB (GZIP), resulting in an incredibly light code.
+        </SiteText>
+        <SiteText>
+          We will show the benefits of Atomico through a comparison, we have
+          used as a basis for this comparison the existing counter webcomponents
+          in
+          <a target="_blank" href="https://webcomponents.dev"
+            >webcomponents.dev</a
+          >
+           of <strong>Atomico</strong>,
+          <strong>Lit</strong>, <strong>Preact</strong> and
+          <strong>React</strong> as a base.
+        </SiteText>
+      </SiteRow>
+      <SiteRow gap={4}>
+        <SiteText>With this comparison we get to know:</SiteText>
+        <SiteCount value={1}>
+          <SiteText>JS Size (Library + Component) sent to browser</SiteText>
+        </SiteCount>
+        <SiteCount value={2}>
+          <SiteText>
+            Load time of the first render of 1000 components in the browser.
+          </SiteText>
+        </SiteCount>
+        <SiteCount value={3}>
+          <SiteText>Lines of code written to solve the webcomponent.</SiteText>
+        </SiteCount>
+      </SiteRow>
+    </SiteRow>
+    <SiteRow>
+      <SiteGraphDiff
+        data={[
+          {
+            label: "Atomico",
+            items: [
+              {
+                label: "10.9kB",
+                value: 10.9,
+              },
+
+              {
+                label: "8.18ms",
+                value: 8.18,
+              },
+              {
+                label: "39 lines",
+                value: 39,
+              },
+            ],
+          },
+          {
+            label: "Lit",
+            items: [
+              {
+                label: "19.8kB",
+                value: 19.8,
+              },
+
+              {
+                label: "7.86ms",
+                value: 7.86,
+              },
+              {
+                label: "56 lines",
+                value: 56,
+              },
+            ],
+          },
+          {
+            label: "Preact",
+            items: [
+              {
+                label: "22kB",
+                value: 22,
+              },
+
+              {
+                label: "9ms",
+                value: 9,
+              },
+              {
+                label: "36 lines",
+                value: 36,
+              },
+            ],
+          },
+          {
+            label: "React",
+            hide: false,
+            items: [
+              {
+                label: "101.9kB",
+                value: 101.9,
+              },
+              {
+                label: "70.9ms",
+                value: 70.9,
+              },
+              {
+                label: "40 lines",
+                value: 40,
+              },
+            ],
+          },
+        ]}
+      />
+      <SiteRow colsMd="1fr 1fr" gap={7} content="top">
+        <SiteRow align="top" gap={4}>
+          <SiteText>
+            According to the context of the comparison we can conclude:
+          </SiteText>
+          <SiteCount value={1}>
+            <SiteText>
+              <strong>Atomico is 8.6x faster than React</strong> on first
+              render.
+            </SiteText>
+          </SiteCount>
+          <SiteCount value={2}>
+            <SiteText>
+              Atomico only needs 75% of the lines of code that Lit needs to
+              solve the same goal.
+            </SiteText>
+          </SiteCount>
+        </SiteRow>
+        <SiteText>
+          Atomico is light in size and in lines of code. Writing fewer lines of
+          code will help you improve your productivity when developing and
+          scaling your interface.
+          <br />
+          <br />
+           The results obtained are thanks to the tool <a
+            target="_blank"
+            href="https://github.com/Polymer/tachometer">Tachometer</a
+          >, you can find the code of this comparison in <a
+            target="_blank"
+            href="https://github.com/atomicojs/perf">atomicojs/perf</a
+          >.
+        </SiteText>
+      </SiteRow>
+    </SiteRow>
+  </SiteRow>
+</SiteSection>
+<SiteSection>
+  <SiteRow align="top">
+    <SiteBigTitle>Two</SiteBigTitle>
+    <SiteRow colsMd="1fr 1fr" gap={7}>
+      <SiteRow>
+        <SiteTitle>
+          <h2>Curva de aprendizaje compartida con React</h2>
+        </SiteTitle>
+        <SiteRow cols="auto 1fr">
+          <img src={imgVeryHappy.src} alt="" width="60" />
+          <SiteTitle elegant>
+            <h3>Tu tiempo invertido con Atomico lo vale</h3>
+          </SiteTitle>
+        </SiteRow>
+        <SiteText>
+          Today the job market is dominated by React and this has caused the
+          frontend route to be marked by React. Atomico has syntax inspired by
+          React Hooks, reducing the friction of its adoption.
+          <br />
+          <br />
+          <SiteText>
+            <strong> If you know React you know Atomico at 90%</strong>
+             , Most companies using Atomico thanks to its similarity to React.
+          </SiteText>
+        </SiteText>
+      </SiteRow>
+      <SiteRow>
+        <SiteText elegant small color="title">ATOMICO</SiteText>
+        <SiteCard>
+          <img src={imgReactCounter.src} alt="React counter" />
+        </SiteCard>
+        <SiteText elegant small color="title">REACT</SiteText>
+        <SiteCard>
+          <img src={imgAtomicoCounter.src} alt="Atomico counter" />
+        </SiteCard>
+      </SiteRow>
+    </SiteRow>
+  </SiteRow>
+</SiteSection>
+<SiteSection>
+  <SiteRow colsMd="50% 50%" gap={7}>
+    <SiteRow>
+      <SiteTitle>
+        <h2>Integración amigable</h2>
+      </SiteTitle>
+      <SiteRow cols="auto 1fr">
+        <img src={imgVeryHappy.src} alt="" width="60" />
+        <SiteTitle>
+          <h3>Componentes para toda la web</h3>
+        </SiteTitle>
+      </SiteRow>
+      <SiteRow>
+        <SiteRow>
+          <SiteText>
+            Atomico is easily integrated into any existing project, thanks to a
+            series of tools that improve coverage at the package level and best
+            practices.
+          </SiteText>
+        </SiteRow>
+        <SiteRow gap={4}>
+          <SiteText>
+            A component created with Atomico can be used in Html, Vue, Preact,
+            React, Svelte, Solid or any other library.
+            <br />
+            <br />
+             In summary <strong
+              >1 single code to support multiple libraries.</strong
+            >
+          </SiteText>
+        </SiteRow>
+      </SiteRow>
+    </SiteRow>
+    <SiteRow>
+      <SiteTitle><h1>welcome</h1></SiteTitle>
+    </SiteRow>
+  </SiteRow>
+</SiteSection>
+
+<SectionTrust />

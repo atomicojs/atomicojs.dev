@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="0.038" x2="0.087" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset="1" stop-color="tomato"/>
+    </linearGradient>
+  </defs>
+  <g id="code" transform="translate(-224 -255)">
+    <path id="Path_457" data-name="Path 457" d="M-1047-5520h-20a10.011,10.011,0,0,1-10-10v-20a10.012,10.012,0,0,1,10-10h20a10.011,10.011,0,0,1,10,10v20A10.011,10.011,0,0,1-1047-5520Zm-20-38a8.01,8.01,0,0,0-8,8v20a8.01,8.01,0,0,0,8,8h20a8.009,8.009,0,0,0,8-8v-20a8.009,8.009,0,0,0-8-8Z" transform="translate(1301 5815)" fill="url(#linear-gradient)"/>
+    <g id="Group_277" data-name="Group 277" transform="translate(-39.515 106.071)">
+      <g id="Group_275" data-name="Group 275" transform="translate(-38.026 251.853) rotate(-45)">
+        <rect id="Rectangle_278" data-name="Rectangle 278" width="10" height="2" rx="1" transform="translate(278.171 161)" fill="#fff"/>
+        <rect id="Rectangle_279" data-name="Rectangle 279" width="10" height="2" rx="1" transform="translate(280.171 161) rotate(90)" fill="#fff" opacity="0.75"/>
+      </g>
+      <g id="Group_276" data-name="Group 276" transform="translate(619.632 86.147) rotate(135)">
+        <rect id="Rectangle_280" data-name="Rectangle 280" width="10" height="2" rx="1" transform="translate(288.778 171.606)" fill="#fff"/>
+        <rect id="Rectangle_281" data-name="Rectangle 281" width="10" height="2" rx="1" transform="translate(290.778 171.606) rotate(90)" fill="#fff" opacity="0.75"/>
+      </g>
+    </g>
+  </g>
+</svg>

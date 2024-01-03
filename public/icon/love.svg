@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.945" y1="0.038" x2="0.087" y2="0.939" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0f"/>
+      <stop offset="1" stop-color="tomato"/>
+    </linearGradient>
+  </defs>
+  <g id="love" transform="translate(-224 -255)">
+    <path id="Path_457" data-name="Path 457" d="M-1047-5520h-20a10.011,10.011,0,0,1-10-10v-20a10.012,10.012,0,0,1,10-10h20a10.011,10.011,0,0,1,10,10v20A10.011,10.011,0,0,1-1047-5520Zm-20-38a8.01,8.01,0,0,0-8,8v20a8.01,8.01,0,0,0,8,8h20a8.009,8.009,0,0,0,8-8v-20a8.009,8.009,0,0,0-8-8Z" transform="translate(1301 5815)" fill="url(#linear-gradient)"/>
+    <g id="Group_278" data-name="Group 278" transform="translate(234 266.999)">
+      <path id="Path_473" data-name="Path 473" d="M4.243,0H9.9a4.243,4.243,0,0,1,4.243,4.243h0A4.243,4.243,0,0,1,9.9,8.485H4.243A4.243,4.243,0,0,1,0,4.243H0A4.243,4.243,0,0,1,4.243,0Z" transform="translate(20 6) rotate(135)" fill="#fff" opacity="0.75"/>
+      <path id="Path_474" data-name="Path 474" d="M4.242,0H9.9a4.242,4.242,0,0,1,4.242,4.242V8.485h-9.9A4.242,4.242,0,1,1,4.243,0Z" transform="translate(6 0) rotate(45)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
