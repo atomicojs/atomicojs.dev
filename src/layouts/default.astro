@@ -3,8 +3,6 @@ import "../styles/global.css";
 import "../styles/home.css";
 import "@atomico/site/global.css";
 import "@atomico/site/tokens.css";
-// import "@fontsource/poppins";
-// import "@fontsource/poppins/600.css";
 import "@fontsource/dm-sans";
 import "@fontsource/dm-sans/700.css";
 import { Seo } from "../data/page";
@@ -28,10 +26,6 @@ const Page = { ...Seo, ...Astro.props };
     <meta property="og:image:alt" content={Page.description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script>
-      // DISABLE SSG
-      import("@atomico/site");
-    </script>
   </head>
   <body>
     <SectionHeader />
@@ -44,6 +38,9 @@ const Page = { ...Seo, ...Astro.props };
         shadowRoot.appendChild(template.content);
         template.remove();
       });
+    </script>
+    <script>
+      requestIdleCallback(() => import("@atomico/site"));
     </script>
   </body>
 </html>
