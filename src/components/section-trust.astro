@@ -8,6 +8,8 @@ import logoNacionalMonteDePiedad from "../../public/logos/logo-nacional-monte-de
 import logoVidaSecurity from "../../public/logos/logo-vida-security.svg";
 import logoUpper from "../../public/logos/logo-upper.svg";
 import logoMasPractica from "../../public/logos/logo-mas-practica.png";
+import iconFast from "../../public/icon/fast.svg";
+import iconGrowth from "../../public/icon/growth.svg";
 import {
   SiteSection,
   SiteTitle,
@@ -18,21 +20,33 @@ import {
 ---
 
 <SiteSection>
-  <SiteRow colsMd="55% auto" gap={7}>
+  <SiteRow gap={7} colsMd="1fr 1fr">
     <SiteRow>
       <SiteTitle>
         <h2>They trust the use of Atomico JS</h2>
       </SiteTitle>
       <SiteText>
-        We thank all the developers and companies that make it possible to use
-        Atomico in their projects.
-        <br />
-        <br />
-         If you already use Atomico we want to know your experience, doubts or
-        ideas.
+        Atomico is designed to create lightweight interfaces for the entire web.
+        We invite you to add Atomico to your projects and have all our support.
       </SiteText>
+      <SiteRow content="top" flex>
+        <SiteRow cols="auto 1fr">
+          <img src={iconFast.src} />
+          <SiteText>
+            Ideal for <strong>progressive implementation</strong>, especially in
+            React-based environments.
+          </SiteText>
+        </SiteRow>
+        <SiteRow cols="auto 1fr">
+          <img src={iconGrowth.src} />
+          <SiteText>
+            Stability with <strong>99.9% coverage</strong> for the entire Atomico
+            js package
+          </SiteText>
+        </SiteRow>
+      </SiteRow>
     </SiteRow>
-    <SiteRow colsMd="1fr 1fr 1fr">
+    <SiteRow cols="1fr 1fr 1fr">
       <SiteCard class="image-center">
         <img
           width="140"
@@ -40,6 +54,7 @@ import {
           loading="lazy"
           src={logoIbmIx.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -49,6 +64,7 @@ import {
           loading="lazy"
           src={logo2Brains.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -58,6 +74,7 @@ import {
           loading="lazy"
           src={logoBarmer.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -67,6 +84,7 @@ import {
           loading="lazy"
           src={logoNacionalMonteDePiedad.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -76,6 +94,7 @@ import {
           loading="lazy"
           src={logoCajaLosAndes.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -85,6 +104,7 @@ import {
           loading="lazy"
           src={logoClinicaAlemana.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -94,6 +114,7 @@ import {
           loading="lazy"
           src={logoVidaSecurity.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -103,6 +124,7 @@ import {
           loading="lazy"
           src={logoUpper.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
       <SiteCard class="image-center">
@@ -112,8 +134,11 @@ import {
           loading="lazy"
           src={logoMasPractica.src}
           alt="Logo Ibm iX"
+          slot="media"
         />
       </SiteCard>
     </SiteRow>
   </SiteRow>
 </SiteSection>
+
+<style></style>

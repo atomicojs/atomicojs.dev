@@ -1,6 +1,6 @@
-import ImageSocial from "../public/social.png";
+import ImageSocial from "../../public/social.png";
 
-export const SEO = {
+export const Seo = {
   image: ImageSocial,
   site: "@atomicojs",
   title: "Atomico webcomponents",
@@ -8,7 +8,7 @@ export const SEO = {
     "OSS project to create interfaces using webcomponents with simple code, fast and light.",
 };
 
-export const socials = {
+export const Socials = {
   twitter: "https://twitter.com/atomicojs",
   documentation: "https://atomico.gitbook.io/doc/",
   youtube: "https://www.youtube.com/channel/UCDuCiVASTng8r4jN6BkuNVg",
@@ -17,18 +17,14 @@ export const socials = {
   discord: "https://t.co/tI70k1DhoN",
 };
 
-export const author = {
-  href: "https://twitter.com/uppercod",
-};
-
-export const menuHeader = [
+export const MenuHeader = [
   {
     title: "Github",
-    href: socials.github,
+    href: Socials.github,
   },
   {
     title: "Documentation",
-    href: socials.documentation,
+    href: Socials.documentation,
   },
   {
     title: "Why Atomico?",
@@ -36,29 +32,29 @@ export const menuHeader = [
   },
 ];
 
-export const menuModal = [
+export const MenuModal = [
   {
     title: "SOCIAL",
     items: [
       {
         title: "Github",
-        href: socials.github,
+        href: Socials.github,
       },
       {
         title: "Twitter",
-        href: socials.twitter,
+        href: Socials.twitter,
       },
       {
         title: "Discord",
-        href: socials.discord,
+        href: Socials.discord,
       },
       {
         title: "ko-fi",
-        href: socials.koFi,
+        href: Socials.koFi,
       },
       {
         title: "Youtube",
-        href: socials.youtube,
+        href: Socials.youtube,
       },
     ],
   },
@@ -92,7 +88,10 @@ export const menuModal = [
         title: "@atomico/hooks",
         href: "https://atomico.gitbook.io/doc/atomico/atomico-hooks",
       },
-      { title: "@atomico/ui(Formilk)", href: "https://formilk.netlify.app/" },
+      {
+        title: "@atomico/react",
+        href: "https://atomico.gitbook.io/doc/atomico/atomico-react",
+      },
       { title: "More", href: "https://atomico.gitbook.io/doc/" },
     ],
   },

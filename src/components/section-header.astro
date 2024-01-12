@@ -1,6 +1,6 @@
 ---
 import imgLogo from "../../public/logo.svg";
-import { menuHeader, menuModal } from "../data";
+import { MenuHeader, MenuModal } from "../data/page";
 import {
   SiteEye,
   SiteHeader,
@@ -14,9 +14,11 @@ import {
 ---
 
 <SiteHeader>
-  <img src={imgLogo.src} slot="logo" />
+  <a href="/" slot="logo">
+    <img src={imgLogo.src} />
+  </a>
   {
-    menuHeader.map((data) => (
+    MenuHeader.map((data) => (
       <SiteLink href={data.href} slot="link" target="_blank">
         {data.title}
       </SiteLink>
@@ -26,14 +28,14 @@ import {
     <SiteEye class="eye" />
     <SiteSection>
       {
-        menuModal.map((data) => (
-          <SiteRow>
+        MenuModal.map((data) => (
+          <SiteRow gap={0}>
             <SiteText elegant color="accent">
               {data.title}
             </SiteText>
             <SiteRow flex>
               {data.items.map((data) => (
-                <SiteLink href={data.href} target="_blank">
+                <SiteLink class="modal-link" href={data.href} target="_blank">
                   {data.title}
                 </SiteLink>
               ))}
@@ -44,6 +46,7 @@ import {
     </SiteSection>
   </SiteMenu>
   <SiteSocials
+    id="site-socials"
     twitter="atomicojs"
     github="atomicojs"
     discord="atomicojs"
@@ -51,3 +54,15 @@ import {
     slot="action"
   />
 </SiteHeader>
+<style>
+  .modal-link {
+    display: block;
+  }
+  @media (max-width: 520px) {
+    #site-socials {
+      position: absolute;
+      top: 80%;
+      max-width: 32px;
+    }
+  }
+</style>

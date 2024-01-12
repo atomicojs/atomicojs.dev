@@ -1,13 +1,16 @@
 ---
 import "../styles/global.css";
 import "../styles/home.css";
+import "@atomico/site/global.css";
 import "@atomico/site/tokens.css";
-import "@fontsource/poppins";
-import "@fontsource/poppins/600.css";
-import { SEO } from "../data";
+// import "@fontsource/poppins";
+// import "@fontsource/poppins/600.css";
+import "@fontsource/dm-sans";
+import "@fontsource/dm-sans/700.css";
+import { Seo } from "../data/page";
 import SectionHeader from "../components/section-header.astro";
 import SectionFooter from "../components/section-footer.astro";
-const Page = { ...SEO, ...Astro.props };
+const Page = { ...Seo, ...Astro.props };
 ---
 
 <html lang="en">
@@ -23,6 +26,8 @@ const Page = { ...SEO, ...Astro.props };
     <meta name="description" content={Page.description} />
     <meta property="og:image" content={Page.image.src} />
     <meta property="og:image:alt" content={Page.description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script>
       // DISABLE SSG
       import("@atomico/site");
@@ -31,7 +36,7 @@ const Page = { ...SEO, ...Astro.props };
   <body>
     <SectionHeader />
     <slot />
-    <!-- <SectionFooter></SectionFooter> -->
+    <SectionFooter />
     <script is:inline>
       document.querySelectorAll("template[shadowroot]").forEach((template) => {
         const mode = template.getAttribute("shadowroot");

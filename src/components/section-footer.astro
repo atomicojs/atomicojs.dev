@@ -1,12 +1,48 @@
 ---
-import { author, menuHeader } from "../data";
+import { SiteLink, SiteSection, SiteRow } from "@atomico/site";
 import imgByUppercod from "../../public/by-uppercod.svg";
+import { MenuHeader } from "../data/page";
+import { Users } from "../data/users";
 ---
-<site-footer>
-    <a href={author.href} slot="logo" target="_blank">
-        <img  src={imgByUppercod.src} alt="Logo Upper" loading="lazy" width="196" height="63"/>
+
+<SiteSection>
+  <div class="footer">
+    <a href={Users.uppercod.href} target="_blank">
+      <img
+        src={imgByUppercod.src}
+        alt="Logo Upper"
+        loading="lazy"
+        width="196"
+        height="63"
+      />
     </a>
-    {
-        menuHeader.map((data)=><site-link target="_blank" href={data.href}>{data.title}</site-link>)
+    <div class="footer_links">
+      {
+        MenuHeader.map((data) => (
+          <SiteLink target="_blank" href={data.href}>
+            {data.title}
+          </SiteLink>
+        ))
+      }
+    </div>
+  </div>
+</SiteSection>
+<style>
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2rem;
+  }
+  .footer_links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  @media (max-width: 520px) {
+    .footer {
+      justify-content: center;
     }
-</site-footer>
+  }
+</style>

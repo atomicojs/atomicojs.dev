@@ -4,21 +4,21 @@
       <stop offset="0" stop-color="#f0f"/>
       <stop offset="1" stop-color="tomato"/>
     </linearGradient>
-    <linearGradient id="linear-gradient-2" x1="0.926" y1="0.24" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#fff"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    <linearGradient id="linear-gradient-2" x1="0.816" y1="0.236" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff07f3"/>
+      <stop offset="1" stop-color="#ff604c"/>
     </linearGradient>
   </defs>
   <g id="growth" transform="translate(-224.001 -255)">
     <path id="Path_457" data-name="Path 457" d="M-1047-5520h-20a10.011,10.011,0,0,1-10-10v-20a10.012,10.012,0,0,1,10-10h20a10.011,10.011,0,0,1,10,10v20A10.011,10.011,0,0,1-1047-5520Zm-20-38a8.01,8.01,0,0,0-8,8v20a8.01,8.01,0,0,0,8,8h20a8.009,8.009,0,0,0,8-8v-20a8.009,8.009,0,0,0-8-8Z" transform="translate(1301.001 5815)" fill="url(#linear-gradient)"/>
     <g id="Group_285" data-name="Group 285" transform="translate(1.053 4.491)">
-      <path id="Path_487" data-name="Path 487" d="M0,1.528c-.006.06,6.393-3.439,12.349,0S23.991.821,23.991.821L11.642,13.17S.006,1.468,0,1.528Z" transform="translate(232.061 279.236) rotate(-45)" fill="url(#linear-gradient-2)"/>
-      <path id="Path_486" data-name="Path 486" d="M0,1.528s6.393-3.439,12.349,0,12.349,0,12.349,0" transform="translate(232.061 279.236) rotate(-45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_487" data-name="Path 487" d="M0,1.528c-.006.06,8.818-.872,13.1,3.41S25.4,2.235,25.4,2.235L13.056,14.584S.006,1.468,0,1.528Z" transform="translate(232.061 279.236) rotate(-45)" opacity="0.5" fill="url(#linear-gradient-2)"/>
+      <path id="Path_486" data-name="Path 486" d="M0,1.528A11.422,11.422,0,0,1,12.349,4.357C18.1,10.109,24.7,1.528,24.7,1.528" transform="translate(232.061 279.236) rotate(-45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
       <g id="Group_286" data-name="Group 286" transform="translate(231.997 261.713)">
         <path id="Path_488" data-name="Path 488" d="M2024.433,5825.209v20h20" transform="translate(-2024.048 -5825.914)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.5" stroke-dasharray="0 3"/>
       </g>
-      <rect id="Rectangle_285" data-name="Rectangle 285" width="6" height="2" rx="1" transform="matrix(0.966, -0.259, 0.259, 0.966, 246.348, 262.261)" fill="#fff"/>
-      <rect id="Rectangle_286" data-name="Rectangle 286" width="6" height="2" rx="1" transform="matrix(0.259, 0.966, -0.966, 0.259, 252.144, 260.708)" fill="#fff"/>
+      <rect id="Rectangle_285" data-name="Rectangle 285" width="6" height="2" rx="1" transform="translate(246.448 263.751) rotate(-45)" fill="#fff"/>
+      <rect id="Rectangle_286" data-name="Rectangle 286" width="6" height="2" rx="1" transform="translate(250.691 259.509) rotate(45)" fill="#fff"/>
     </g>
   </g>
 </svg>
