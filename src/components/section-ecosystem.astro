@@ -4,14 +4,14 @@ import {
   SiteCard,
   SiteCategories,
   SiteLink,
+  SiteRow,
   SiteSection,
   SiteSocials,
   SiteText,
   SiteTitle,
-  SiteRow,
-  SitePlanet,
 } from "@atomico/site";
-import { Packages, Categories } from "../data/packages";
+import imgAtom from "../../public/atom.svg";
+import { Categories, Packages } from "../data/packages";
 ---
 
 <SiteSection>
@@ -28,7 +28,7 @@ import { Packages, Categories } from "../data/packages";
           >, and other <strong>Frontend solutions</strong>.
         </SiteText>
       </SiteRow>
-      <SitePlanet style="height:320px;width:320px; margin: auto" />
+      <img src={imgAtom.src} alt="" />
     </SiteRow>
     <SiteCategories category="*" columns="1, 2 768px, 3 980px">
       <SiteLink slot="category" data-category="*" dot="#FFE600">All</SiteLink>
