@@ -40,7 +40,7 @@ const Page = { ...Seo, ...Astro.props };
       });
     </script>
     <script>
-      requestIdleCallback(() => import("@atomico/site"));
+      window.addEventListener("load", () => import("@atomico/site"));
     </script>
   </body>
 </html>
