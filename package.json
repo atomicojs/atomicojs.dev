@@ -19,7 +19,7 @@
     "@atomico/astro": "^0.9.1",
     "@atomico/compare-content": "^1.3.2",
     "@atomico/hooks": "^4.0.0-beta.4",
-    "@atomico/site": "^0.11.0",
+    "@atomico/site": "^0.11.1",
     "@fontsource/dm-sans": "^5.0.18",
     "atomico": "^1.77.1"
   }
