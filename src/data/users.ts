@@ -35,6 +35,14 @@ export const Users = {
       github: "milkdown",
     },
   },
+  wickyNilliams: {
+    name: "WickyNilliams",
+    avatar: "https://github.com/WickyNilliams.png?size=60",
+    socials: {
+      github: "WickyNilliams",
+      twitter: "WickyNilliams",
+    },
+  },
 } satisfies {
   [id: string]: User;
 };

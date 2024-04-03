@@ -134,4 +134,16 @@ export const Packages: Package[] = [
     user: Users.milkdown,
     href: "https://milkdown.dev/",
   },
+  {
+    name: "Cally",
+    category: Category.community,
+    description: (
+      <>
+        Open source calendar components for selecting single dates or date
+        ranges. Framework-agnostic, themeable, localizable, accessible.
+      </>
+    ),
+    user: Users.wickyNilliams,
+    href: "https://wicky.nillia.ms/cally/",
+  },
 ];
