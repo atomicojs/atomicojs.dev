@@ -14,7 +14,7 @@ export const Socials = {
   youtube: "https://www.youtube.com/channel/UCDuCiVASTng8r4jN6BkuNVg",
   github: "https://github.com/atomicojs/atomico/",
   koFi: "https://ko-fi.com/atomicojs",
-  discord: "https://t.co/tI70k1DhoN",
+  discord: "https://discord.gg/rZJr5hpps4",
 };
 
 export const MenuHeader = [
